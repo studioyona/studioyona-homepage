@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Studio YONA mark">
+  <defs>
+    <linearGradient id="g" x1="8" x2="88" y1="10" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2d5b7c"/>
+      <stop offset="1" stop-color="#b86d46"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="28" fill="#fffaf5"/>
+  <circle cx="48" cy="48" r="28" fill="none" stroke="url(#g)" stroke-width="7"/>
+  <path d="M35 34.5 48 57l13-22.5M48 57v9" fill="none" stroke="#171310" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M24 22h48" stroke="#171310" stroke-linecap="round" stroke-opacity=".06" stroke-width="4"/>
+</svg>
