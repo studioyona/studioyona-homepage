@@ -12,7 +12,7 @@ if [ -z "$PORT" ]; then
 fi
 
 URL="http://localhost:${PORT}/?preview=$(date +%s)"
-SERVER_COMMAND="cd '$PROJECT_DIR'; /usr/bin/python3 -m http.server ${PORT} --directory '$PROJECT_DIR'"
+SERVER_COMMAND="cd '$PROJECT_DIR'; /usr/bin/python3 scripts/no_cache_server.py --port ${PORT} --directory '$PROJECT_DIR'"
 
 osascript <<OSA
 tell application "Terminal"

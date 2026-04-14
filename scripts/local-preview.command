@@ -3,7 +3,7 @@
 PROJECT_DIR='/Users/Captain/Projects/VibeCoding/Studio YONA HomePage'
 PORT=8123
 URL="http://localhost:${PORT}/?preview=$(date +%s)"
-SERVER_COMMAND="cd '$PROJECT_DIR'; /usr/bin/python3 -m http.server ${PORT} --directory '$PROJECT_DIR'"
+SERVER_COMMAND="cd '$PROJECT_DIR'; /usr/bin/python3 scripts/no_cache_server.py --port ${PORT} --directory '$PROJECT_DIR'"
 
 EXISTING_PID="$(lsof -tiTCP:${PORT} -sTCP:LISTEN 2>/dev/null | head -n 1)"
 if [ -n "$EXISTING_PID" ]; then
