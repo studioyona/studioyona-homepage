@@ -3,81 +3,128 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Studio YONA 회사 소개와 제작 스토리" />
+    <meta name="description" content="부부의 이름을 담은 작은 스튜디오. Studio YONA는 이렇게 시작했습니다." />
     <title>Studio YONA | 회사 소개</title>
     <link rel="canonical" href="https://www.studioyona.co.kr/about/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css" />
-    <script defer src="/assets/site.js"></script>
+    <link rel="stylesheet" href="/assets/site.css?v=20260406h" />
+    <script defer src="/assets/site.js?v=20260406h"></script>
   </head>
   <body
+    class="compact-page"
     data-title-ko="Studio YONA | 회사 소개"
     data-title-en="Studio YONA | About"
-    data-description-ko="Studio YONA 회사 소개와 제작 스토리"
-    data-description-en="Studio YONA company story and creative direction"
+    data-description-ko="부부의 이름을 담은 작은 스튜디오. Studio YONA는 이렇게 시작했습니다."
+    data-description-en="A studio named after us — the story of how Studio YONA began."
   >
     <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+    <header class="home-header compact-header" data-lang-block="ko">
+      <a class="home-wordmark" href="/" aria-label="Studio YONA 홈">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="언어 전환">
+          <a href="/about/" data-set-lang="ko">KR</a>
+          <a href="/about/?lang=en" data-set-lang="en">EN</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          data-menu-toggle
+        >
+          <span class="menu-toggle-label" data-lang-inline="ko">메뉴</span>
+          <span class="menu-toggle-label" data-lang-inline="en" hidden>Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <header class="home-header compact-header" data-lang-block="en" hidden>
+      <a class="home-wordmark" href="/?lang=en" aria-label="Studio YONA home">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="Language switcher">
+          <a href="/about/" data-set-lang="ko">KR</a>
+          <a href="/about/?lang=en" data-set-lang="en">EN</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          data-menu-toggle
+        >
+          <span class="menu-toggle-label" data-lang-inline="ko">메뉴</span>
+          <span class="menu-toggle-label" data-lang-inline="en" hidden>Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div class="menu-overlay" id="site-menu" hidden data-menu>
+      <button class="menu-backdrop" type="button" aria-label="Close menu" data-menu-close></button>
+      <aside class="menu-sheet" aria-label="Site navigation">
+        <div class="menu-sheet-top">
+          <p class="menu-kicker">Studio YONA</p>
+          <button class="menu-close" type="button" data-menu-close>
+            <span data-lang-inline="ko">닫기</span>
+            <span data-lang-inline="en" hidden>Close</span>
+          </button>
+        </div>
+        <nav class="menu-nav" data-lang-block="ko">
+          <a data-nav-link href="/" data-menu-close>홈</a>
+          <a data-nav-link href="/about/" data-menu-close>회사 소개</a>
+          <a data-nav-link href="/apps/" data-menu-close>앱 소개</a>
+          <a data-nav-link href="/support/" data-menu-close>고객지원</a>
+          <a data-nav-link href="/contact/" data-menu-close>문의하기</a>
+        </nav>
+        <nav class="menu-nav" data-lang-block="en" hidden>
+          <a data-nav-link href="/?lang=en" data-menu-close>Home</a>
+          <a data-nav-link href="/about/?lang=en" data-menu-close>About</a>
+          <a data-nav-link href="/apps/?lang=en" data-menu-close>Apps</a>
+          <a data-nav-link href="/support/?lang=en" data-menu-close>Support</a>
+          <a data-nav-link href="/contact/?lang=en" data-menu-close>Contact</a>
+        </nav>
+      </aside>
+    </div>
+
     <div class="site-shell">
-      <header class="site-header" data-lang-block="ko">
-        <a class="brand" href="/" aria-label="Studio YONA 홈">
-          <img class="brand-mark" src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
-          <span>Studio YONA</span>
-        </a>
-        <nav class="nav" aria-label="주요 메뉴">
-          <a data-nav-link href="/">홈</a>
-          <a data-nav-link href="/about/">회사 소개</a>
-          <a data-nav-link href="/apps/">앱 소개</a>
-          <a data-nav-link href="/support/">고객지원</a>
-          <a data-nav-link href="/contact/">문의하기</a>
-          <span class="lang-switch" aria-label="언어 전환">
-            <a href="/about/" data-set-lang="ko">KO</a>
-            <a href="/about/?lang=en" data-set-lang="en">EN</a>
-          </span>
-        </nav>
-      </header>
-
-      <header class="site-header" data-lang-block="en" hidden>
-        <a class="brand" href="/?lang=en" aria-label="Studio YONA home">
-          <img class="brand-mark" src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
-          <span>Studio YONA</span>
-        </a>
-        <nav class="nav" aria-label="Primary navigation">
-          <a data-nav-link href="/">Home</a>
-          <a data-nav-link href="/about/">About</a>
-          <a data-nav-link href="/apps/">Apps</a>
-          <a data-nav-link href="/support/">Support</a>
-          <a data-nav-link href="/contact/">Contact</a>
-          <span class="lang-switch" aria-label="Language switcher">
-            <a href="/about/" data-set-lang="ko">KO</a>
-            <a href="/about/?lang=en" data-set-lang="en">EN</a>
-          </span>
-        </nav>
-      </header>
-
       <main id="content">
         <section class="hero" data-reveal data-lang-block="ko">
           <div class="hero-grid">
             <div>
-              <p class="eyebrow">회사 소개</p>
-              <h1>Studio YONA는 왜 시작되었나.</h1>
+              <p class="eyebrow">우리 이야기</p>
+              <h1>아빠가 상상하면, 엄마가 만듭니다.</h1>
               <p>
-                Studio YONA는 작은 아이디어를 조용히 다듬어, 사용자에게 오래 기억되는 앱
-                경험으로 바꾸는 것을 목표로 합니다. EDSN Frame은 그 방향을 가장 먼저 보여주는
-                시작점입니다.
+                Studio YONA는 부부의 이름을 딴 작은 스튜디오입니다.
+                아빠가 "이런 게 있으면 좋겠다"고 이야기하면 개발자 엄마가 직접 만들어 줍니다.
+                언젠가는 아들이 만들고 싶은 앱도 만들어 줄 거예요.
+                우리 가족이 귀엽고 재밌고 행복한 것, 그게 이 스튜디오의 전부입니다.
               </p>
               <div class="hero-actions">
-                <a class="button" href="/apps/">앱 소개 보기</a>
+                <a class="button" href="/apps/">앱 둘러보기</a>
                 <a class="button secondary" href="/contact/">문의하기</a>
               </div>
             </div>
             <div class="hero-side">
               <div class="hero-card">
-                <strong>작게</strong>
-                <p>한 번에 많은 것을 하기보다 필요한 것부터 정리합니다.</p>
+                <strong>가족 먼저</strong>
+                <p>우리 가족이 정말 필요한 것부터 만듭니다.</p>
               </div>
               <div class="hero-card">
-                <strong>명확하게</strong>
-                <p>감성적인 화면과 분명한 정보 구조를 함께 가져갑니다.</p>
+                <strong>함께 나누기</strong>
+                <p>우리의 기쁨을 더 많은 분들과 나누고 싶습니다.</p>
               </div>
             </div>
           </div>
@@ -86,25 +133,27 @@
         <section class="hero" data-reveal data-lang-block="en" hidden>
           <div class="hero-grid">
             <div>
-              <p class="eyebrow">About</p>
-              <h1>Why Studio YONA exists.</h1>
+              <p class="eyebrow">Our story</p>
+              <h1>Dad dreams it. Mom builds it.</h1>
               <p>
-                Studio YONA exists to shape small ideas into calm, memorable app experiences.
-                EDSN Frame is the first release that expresses that direction.
+                Studio YONA is named after the two of us — husband and wife.
+                When dad says "I wish we had something like this," mom (the developer)
+                makes it happen. Someday, our son will make requests too.
+                Keeping our family cute, fun, and happy — that's what this studio is all about.
               </p>
               <div class="hero-actions">
-                <a class="button" href="/apps/?lang=en">View apps</a>
+                <a class="button" href="/apps/?lang=en">Explore apps</a>
                 <a class="button secondary" href="/contact/?lang=en">Contact</a>
               </div>
             </div>
             <div class="hero-side">
               <div class="hero-card">
-                <strong>Small</strong>
-                <p>Start with what matters instead of expanding the surface too early.</p>
+                <strong>Family first</strong>
+                <p>We build what our family actually needs.</p>
               </div>
               <div class="hero-card">
-                <strong>Clear</strong>
-                <p>Emotional visuals and clear information should work together.</p>
+                <strong>Shared joy</strong>
+                <p>We want to share this happiness with more people.</p>
               </div>
             </div>
           </div>
@@ -113,32 +162,32 @@
         <section class="section" data-reveal data-lang-block="ko">
           <div class="section-head">
             <div>
-              <p class="eyebrow">제작 스토리</p>
-              <h2>작게 시작해도, 분위기는 분명하게.</h2>
+              <p class="eyebrow">걸어온 길</p>
+              <h2>이렇게 여기까지 왔습니다.</h2>
             </div>
           </div>
           <div class="feature-panel">
             <div class="stack">
               <div class="timeline-item">
-                <span class="time">Mission</span>
-                <strong>정제된 앱과 맑은 운영</strong>
-                <p>과한 기능보다 핵심 경험에 집중하고, 운영은 단순하게 유지합니다.</p>
+                <span class="time">시작</span>
+                <strong>가족의 필요</strong>
+                <p>포토부스에 가기 어려운 날, 아이와 함께 귀여운 사진을 찍고 싶었습니다. 그래서 직접 만들기로 했어요.</p>
               </div>
               <div class="timeline-item">
-                <span class="time">Now</span>
-                <strong>EDSN Frame 준비 중</strong>
-                <p>앱스토어 심사와 출시 안내를 위한 최소한의 정보부터 탄탄히 만듭니다.</p>
+                <span class="time">지금</span>
+                <strong>두 개의 앱</strong>
+                <p>EDSN Frame(어디서나 프레임)은 App Store에서 만나볼 수 있고, 두 번째 앱 탐정의 녹음기도 준비하고 있습니다.</p>
               </div>
               <div class="timeline-item">
-                <span class="time">Next</span>
-                <strong>다앱 구조 확장</strong>
-                <p>새 앱이 추가되어도 같은 구조로 이어질 수 있게 설계합니다.</p>
+                <span class="time">앞으로</span>
+                <strong>더 많은 즐거움</strong>
+                <p>우리 가족의 일상에서 태어난 아이디어를 하나씩 앱으로 만들어 갑니다.</p>
               </div>
             </div>
             <div class="feature-art">
               <div class="feature-art-content">
                 <strong>Studio<br />YONA</strong>
-                <p>감성적인 화면, 명확한 정보, 낮은 유지보수 비용이 만나는 지점.</p>
+                <p>우리 가족이 쓰고 싶은 앱을 만듭니다. 그리고 당신의 가족에게도 전합니다.</p>
               </div>
             </div>
           </div>
@@ -147,57 +196,65 @@
         <section class="section" data-reveal data-lang-block="en" hidden>
           <div class="section-head">
             <div>
-              <p class="eyebrow">Story</p>
-              <h2>Small launch, clear identity.</h2>
+              <p class="eyebrow">Our journey</p>
+              <h2>How we got here.</h2>
             </div>
           </div>
           <div class="feature-panel">
             <div class="stack">
               <div class="timeline-item">
-                <span class="time">Mission</span>
-                <strong>Refined products, simple operations</strong>
-                <p>Focus on the core experience and keep the operating model light.</p>
+                <span class="time">Start</span>
+                <strong>A family need</strong>
+                <p>We wanted cute photo booth pictures with our kid, even on days we couldn't go. So mom decided to build it.</p>
               </div>
               <div class="timeline-item">
                 <span class="time">Now</span>
-                <strong>Preparing EDSN Frame</strong>
-                <p>Build the minimum information set needed for review and launch.</p>
+                <strong>Two apps</strong>
+                <p>EDSN Frame is live on the App Store, and our second app — Detective's Recorder — is on the way.</p>
               </div>
               <div class="timeline-item">
                 <span class="time">Next</span>
-                <strong>Future app expansion</strong>
-                <p>Use the same structure so future releases can slot in naturally.</p>
+                <strong>More to come</strong>
+                <p>Every app starts as an idea from our family's everyday life.</p>
               </div>
             </div>
             <div class="feature-art">
               <div class="feature-art-content">
                 <strong>Studio<br />YONA</strong>
-                <p>Where emotional design, clear information, and low maintenance cost meet.</p>
+                <p>We make apps we want to use as a family. And we share them with yours.</p>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer" data-lang-block="ko">
+      <footer class="footer footer-global" data-lang-block="ko">
         <div>© <span data-current-year></span> Studio YONA</div>
-        <div class="footer-links">
-          <a href="/ko/apps/edsn-frame/">EDSN Frame</a>
-          <a href="/ko/apps/edsn-frame/legal/privacy/">개인정보처리방침</a>
-          <a href="/ko/apps/edsn-frame/legal/terms/">이용약관</a>
-          <a href="/support/">고객지원</a>
-          <a href="/contact/">문의하기</a>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            상호: 스튜디오 요나 | 대표: 이나영 | 개인정보관리책임자: 이나영 | 이메일:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            주소: 서울특별시 영등포구 대방천로12길 1, 419호 | 사업자등록번호: 392-20-02356 |
+            통신판매: 제 2026-서울영등포-0975 호
+          </p>
         </div>
       </footer>
 
-      <footer class="footer" data-lang-block="en" hidden>
+      <footer class="footer footer-global" data-lang-block="en" hidden>
         <div>© <span data-current-year></span> Studio YONA</div>
-        <div class="footer-links">
-          <a href="/en/apps/edsn-frame/">EDSN Frame</a>
-          <a href="/en/apps/edsn-frame/legal/privacy/">Privacy Policy</a>
-          <a href="/en/apps/edsn-frame/legal/terms/">Terms of Service</a>
-          <a href="/support/?lang=en">Support</a>
-          <a href="/contact/?lang=en">Contact</a>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer:
+            Nayoung Lee | Email:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            Address: #419, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea |
+            Business Registration No.: 392-20-02356 | Mail-order business report:
+            2026-Seoul-Yeongdeungpo-0975
+          </p>
         </div>
       </footer>
     </div>

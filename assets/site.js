@@ -91,6 +91,54 @@
 
   applyLanguage(getLanguage());
 
+  const menu = document.querySelector("[data-menu]");
+  const menuToggles = document.querySelectorAll("[data-menu-toggle]");
+  const menuClosers = document.querySelectorAll("[data-menu-close]");
+
+  const syncMenuState = (expanded) => {
+    menuToggles.forEach((button) => {
+      button.setAttribute("aria-expanded", expanded ? "true" : "false");
+    });
+  };
+
+  const closeMenu = () => {
+    if (!menu) return;
+    menu.hidden = true;
+    document.body.classList.remove("menu-open");
+    syncMenuState(false);
+  };
+
+  const openMenu = () => {
+    if (!menu) return;
+    menu.hidden = false;
+    document.body.classList.add("menu-open");
+    syncMenuState(true);
+  };
+
+  if (menu) {
+    menuToggles.forEach((button) => {
+      button.addEventListener("click", () => {
+        if (menu.hidden) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
+    });
+
+    menuClosers.forEach((button) => {
+      button.addEventListener("click", () => {
+        closeMenu();
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !menu.hidden) {
+        closeMenu();
+      }
+    });
+  }
+
   const revealTargets = document.querySelectorAll("[data-reveal]");
   if ("IntersectionObserver" in window && revealTargets.length > 0) {
     const observer = new IntersectionObserver(

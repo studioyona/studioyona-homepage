@@ -6,47 +6,65 @@
     <title>EDSN Frame | Studio YONA</title>
     <meta
       name="description"
-      content="EDSN Frame is Studio YONA's first upcoming app. Explore the app overview, screenshots, support, privacy policy, and terms in English."
+      content="EDSN Frame — turn your smartphone into a photo booth. Take cute photos anytime with fun frames, effects, and collectible items."
     />
     <link rel="canonical" href="https://www.studioyona.co.kr/en/apps/edsn-frame/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css" />
+    <link rel="stylesheet" href="/assets/site.css?v=20260406h" />
+    <script defer src="/assets/site.js?v=20260406h"></script>
   </head>
-  <body class="app-page app-detail-page">
-    <div class="shell">
-      <header class="topbar">
-        <a class="brand" href="/?lang=en">
-          <strong>Studio YONA</strong>
-          <span>App studio homepage</span>
-        </a>
-        <nav class="nav" aria-label="Primary">
-          <a href="/?lang=en">Home</a>
-          <a href="/about/?lang=en">About</a>
-          <a href="/apps/?lang=en" class="active">Apps</a>
-          <a href="/support/?lang=en">Support</a>
-          <a href="/contact/?lang=en">Contact</a>
-          <a href="/en/apps/edsn-frame/legal/privacy/">Privacy Policy</a>
-          <a href="/en/apps/edsn-frame/legal/terms/">Terms</a>
+  <body class="app-page app-detail-page compact-page">
+    <header class="home-header compact-header">
+      <a class="home-wordmark" href="/?lang=en" aria-label="Studio YONA home">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="Language switcher">
           <a href="/ko/apps/edsn-frame/">KR</a>
-        </nav>
-      </header>
+          <a href="/en/apps/edsn-frame/" aria-current="page">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="app-menu-edsn-en" data-menu-toggle>
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
 
+    <div class="menu-overlay" id="app-menu-edsn-en" hidden data-menu>
+      <button class="menu-backdrop" type="button" aria-label="Close menu" data-menu-close></button>
+      <aside class="menu-sheet" aria-label="Site navigation">
+        <div class="menu-sheet-top">
+          <p class="menu-kicker">Studio YONA</p>
+          <button class="menu-close" type="button" data-menu-close>Close</button>
+        </div>
+        <nav class="menu-nav">
+          <a href="/?lang=en" data-menu-close>Home</a>
+          <a href="/about/?lang=en" data-menu-close>About</a>
+          <a href="/apps/?lang=en" data-menu-close>Apps</a>
+          <a href="/support/?lang=en" data-menu-close>Support</a>
+          <a href="/contact/?lang=en" data-menu-close>Contact</a>
+        </nav>
+      </aside>
+    </div>
+
+    <div class="shell">
       <main>
         <section class="hero">
           <div class="hero-grid">
             <article class="card hero-copy">
-              <span class="eyebrow">App Store-ready preview</span>
-              <h1>EDSN Frame</h1>
+              <span class="eyebrow">Our first app</span>
+              <h1 class="app-lockup"><span class="app-lockup-main no-break">EDSN Frame</span></h1>
               <p class="lead">
-                Studio YONA's first upcoming app, shaped to present visual stories with calm structure and a refined, minimal feel. The MVP site is intentionally simple so it can scale into a multi-app studio homepage later.
+                We wanted cute photo booth pictures even on days we couldn't actually go. Turn your smartphone into a photo booth — snap fun photos anytime, anywhere, and dress them up with colorful frames.
               </p>
               <div class="hero-actions">
                 <a class="button primary" href="/en/apps/edsn-frame/legal/privacy/">Privacy Policy</a>
                 <a class="button secondary" href="/en/apps/edsn-frame/legal/terms/">Terms of Service</a>
               </div>
               <div class="meta" aria-label="App meta">
-                <span class="pill">Upcoming</span>
-                <span class="pill">Korean + English</span>
+                <span class="pill">Available on iOS</span>
+                <span class="pill">Korean · English</span>
                 <span class="pill">Email support</span>
               </div>
             </article>
@@ -54,11 +72,11 @@
             <aside class="card details" aria-label="App summary">
               <div class="detail-block">
                 <div class="detail-label">One-liner</div>
-                <div class="detail-value">A minimal app for presenting emotional work with clarity.</div>
+                <div class="detail-value">Your smartphone, now a photo booth.</div>
               </div>
               <div class="detail-block">
-                <div class="detail-label">Launch timing</div>
-                <div class="detail-value">To be updated with the app release schedule after the MVP site goes live.</div>
+                <div class="detail-label">Status</div>
+                <div class="detail-value">iOS version available · Android coming soon</div>
               </div>
               <div class="detail-block">
                 <div class="detail-label">Support email</div>
@@ -73,27 +91,26 @@
             <article class="card panel">
               <h2>Key features</h2>
               <ul class="feature-list">
-                <li>A calm and focused UI that helps the app present its core value immediately</li>
-                <li>Clear app name, short description, screenshots, and release information for App Review</li>
-                <li>App-scoped legal pages and support links in one predictable structure</li>
-                <li>A multi-app foundation that can absorb future Studio YONA releases without rethinking the layout</li>
+                <li>Take photo booth-style pictures with your phone camera — anytime, anywhere</li>
+                <li>Decorate with a wide range of color, gradient, and character frames</li>
+                <li>Relive and share your memories as videos too</li>
+                <li>Earn points to unlock new frames and adorable items</li>
               </ul>
             </article>
 
             <article class="card panel">
-              <h2>What is included</h2>
+              <h2>App info</h2>
               <ul class="check-list">
-                <li>App name</li>
-                <li>Short description</li>
-                <li>3 to 5 key features</li>
-                <li>Screenshots</li>
-                <li>Privacy Policy and Terms links</li>
+                <li>Category: Photo & Video</li>
+                <li>Compatibility: iOS (Android coming soon)</li>
+                <li>Languages: Korean, English</li>
+                <li>Price: Free (in-app purchases available)</li>
               </ul>
             </article>
 
             <article class="card panel full">
               <h2>Screenshots</h2>
-              <p>The site reserves space for the app screenshots, so visuals can be added later without changing the page structure.</p>
+              <p>See the app in action.</p>
               <div class="screens">
                 <div class="shot">Screenshot 01</div>
                 <div class="shot">Screenshot 02</div>
@@ -107,7 +124,7 @@
           <div class="section-grid">
             <article class="card panel">
               <h2>Support</h2>
-              <p>Support is email-only for the MVP, which keeps operations simple and avoids unnecessary data collection.</p>
+              <p>Got a question or found a bug? Just send us an email.</p>
               <div class="hero-actions">
                 <a class="button primary" href="mailto:studioyona.official@gmail.com">Email support</a>
                 <a class="button secondary" href="/support/?lang=en">Support page</a>
@@ -125,15 +142,19 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="footer-row">
-          <div>Studio YONA · EDSN Frame</div>
-          <div class="footer-links">
-            <a href="/?lang=en">Home</a>
-            <a href="/about/?lang=en">About</a>
-            <a href="/support/?lang=en">Support</a>
-            <a href="/ko/apps/edsn-frame/">한국어</a>
-          </div>
+      <footer class="footer footer-global">
+        <div>© <span data-current-year></span> Studio YONA</div>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer:
+            Nayoung Lee | Email:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            Address: #419, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea |
+            Business Registration No.: 392-20-02356 | Mail-order business report:
+            2026-Seoul-Yeongdeungpo-0975
+          </p>
         </div>
       </footer>
     </div>

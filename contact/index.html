@@ -3,66 +3,94 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Studio YONA 문의하기" />
+    <meta name="description" content="Studio YONA에 문의하기 — 무엇이든 편하게 보내주세요." />
     <title>Studio YONA | 문의하기</title>
     <link rel="canonical" href="https://www.studioyona.co.kr/contact/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css" />
-    <script defer src="/assets/site.js"></script>
+    <link rel="stylesheet" href="/assets/site.css?v=20260406h" />
+    <script defer src="/assets/site.js?v=20260406h"></script>
   </head>
   <body
+    class="compact-page"
     data-title-ko="Studio YONA | 문의하기"
     data-title-en="Studio YONA | Contact"
-    data-description-ko="Studio YONA 문의하기"
-    data-description-en="Studio YONA contact"
+    data-description-ko="Studio YONA에 문의하기 — 무엇이든 편하게 보내주세요."
+    data-description-en="Contact Studio YONA — we'd love to hear from you."
   >
     <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+    <header class="home-header compact-header" data-lang-block="ko">
+      <a class="home-wordmark" href="/" aria-label="Studio YONA 홈">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="언어 전환">
+          <a href="/contact/" data-set-lang="ko">KR</a>
+          <a href="/contact/?lang=en" data-set-lang="en">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="menu-toggle-label" data-lang-inline="ko">메뉴</span>
+          <span class="menu-toggle-label" data-lang-inline="en" hidden>Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <header class="home-header compact-header" data-lang-block="en" hidden>
+      <a class="home-wordmark" href="/?lang=en" aria-label="Studio YONA home">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="Language switcher">
+          <a href="/contact/" data-set-lang="ko">KR</a>
+          <a href="/contact/?lang=en" data-set-lang="en">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="menu-toggle-label" data-lang-inline="ko">메뉴</span>
+          <span class="menu-toggle-label" data-lang-inline="en" hidden>Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="menu-overlay" id="site-menu" hidden data-menu>
+      <button class="menu-backdrop" type="button" aria-label="Close menu" data-menu-close></button>
+      <aside class="menu-sheet" aria-label="Site navigation">
+        <div class="menu-sheet-top">
+          <p class="menu-kicker">Studio YONA</p>
+          <button class="menu-close" type="button" data-menu-close>
+            <span data-lang-inline="ko">닫기</span>
+            <span data-lang-inline="en" hidden>Close</span>
+          </button>
+        </div>
+        <nav class="menu-nav" data-lang-block="ko">
+          <a data-nav-link href="/" data-menu-close>홈</a>
+          <a data-nav-link href="/about/" data-menu-close>회사 소개</a>
+          <a data-nav-link href="/apps/" data-menu-close>앱 소개</a>
+          <a data-nav-link href="/support/" data-menu-close>고객지원</a>
+          <a data-nav-link href="/contact/" data-menu-close>문의하기</a>
+        </nav>
+        <nav class="menu-nav" data-lang-block="en" hidden>
+          <a data-nav-link href="/?lang=en" data-menu-close>Home</a>
+          <a data-nav-link href="/about/?lang=en" data-menu-close>About</a>
+          <a data-nav-link href="/apps/?lang=en" data-menu-close>Apps</a>
+          <a data-nav-link href="/support/?lang=en" data-menu-close>Support</a>
+          <a data-nav-link href="/contact/?lang=en" data-menu-close>Contact</a>
+        </nav>
+      </aside>
+    </div>
+
     <div class="site-shell">
-      <header class="site-header" data-lang-block="ko">
-        <a class="brand" href="/" aria-label="Studio YONA 홈">
-          <img class="brand-mark" src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
-          <span>Studio YONA</span>
-        </a>
-        <nav class="nav" aria-label="주요 메뉴">
-          <a data-nav-link href="/">홈</a>
-          <a data-nav-link href="/about/">회사 소개</a>
-          <a data-nav-link href="/apps/">앱 소개</a>
-          <a data-nav-link href="/support/">고객지원</a>
-          <a data-nav-link href="/contact/">문의하기</a>
-          <span class="lang-switch" aria-label="언어 전환">
-            <a href="/contact/" data-set-lang="ko">KO</a>
-            <a href="/contact/?lang=en" data-set-lang="en">EN</a>
-          </span>
-        </nav>
-      </header>
-
-      <header class="site-header" data-lang-block="en" hidden>
-        <a class="brand" href="/?lang=en" aria-label="Studio YONA home">
-          <img class="brand-mark" src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
-          <span>Studio YONA</span>
-        </a>
-        <nav class="nav" aria-label="Primary navigation">
-          <a data-nav-link href="/">Home</a>
-          <a data-nav-link href="/about/">About</a>
-          <a data-nav-link href="/apps/">Apps</a>
-          <a data-nav-link href="/support/">Support</a>
-          <a data-nav-link href="/contact/">Contact</a>
-          <span class="lang-switch" aria-label="Language switcher">
-            <a href="/contact/" data-set-lang="ko">KO</a>
-            <a href="/contact/?lang=en" data-set-lang="en">EN</a>
-          </span>
-        </nav>
-      </header>
-
       <main id="content">
         <section class="hero" data-reveal data-lang-block="ko">
           <div class="hero-grid">
             <div>
               <p class="eyebrow">문의하기</p>
-              <h1>필요한 이야기를 직접 보내 주세요.</h1>
+              <h1>편하게 이야기해 주세요.</h1>
               <p>
-                일반 문의와 간단한 앱 관련 질문은 이메일로 바로 보내실 수 있습니다. 운영 여건에
-                따라 순서대로 답변드리며, 복잡한 폼 없이 간단하게 운영합니다.
+                앱에 대한 질문, 협업 제안, 버그 제보 등 어떤 내용이든 환영합니다.
+                이메일로 보내주시면 순서대로 답변드립니다.
               </p>
               <div class="hero-actions">
                 <a class="button" href="mailto:studioyona.official@gmail.com?subject=Studio%20YONA%20Inquiry">메일 보내기</a>
@@ -75,8 +103,8 @@
                 <p>공식 연락 주소</p>
               </div>
               <div class="hero-card">
-                <strong>Direct</strong>
-                <p>폼 없이, DB 없이, 바로 이메일로 연결합니다.</p>
+                <strong>간편 문의</strong>
+                <p>별도 가입이나 양식 없이, 바로 이메일로 연결됩니다.</p>
               </div>
             </div>
           </div>
@@ -86,10 +114,10 @@
           <div class="hero-grid">
             <div>
               <p class="eyebrow">Contact</p>
-              <h1>Reach us directly.</h1>
+              <h1>We'd love to hear from you.</h1>
               <p>
-                General inquiries and simple app questions can go straight to email. Replies are
-                handled in order based on availability.
+                Questions about our apps, ideas, partnership inquiries — anything goes.
+                Send us an email and we'll get back to you.
               </p>
               <div class="hero-actions">
                 <a class="button" href="mailto:studioyona.official@gmail.com?subject=Studio%20YONA%20Inquiry">Send email</a>
@@ -102,8 +130,8 @@
                 <p>Official contact address</p>
               </div>
               <div class="hero-card">
-                <strong>Direct</strong>
-                <p>No form, no database, no extra steps.</p>
+                <strong>Simple</strong>
+                <p>No sign-up, no forms — just email us directly.</p>
               </div>
             </div>
           </div>
@@ -112,26 +140,26 @@
         <section class="section" data-reveal data-lang-block="ko">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Use cases</p>
-              <h2>이런 문의에 적합합니다.</h2>
+              <p class="eyebrow">이런 문의를 보내주세요</p>
+              <h2>이런 이야기를 기다리고 있어요.</h2>
             </div>
           </div>
           <div class="list-grid">
             <div class="list-item">
               <h3>앱 질문</h3>
-              <p>앱 소개, 출시 예정 시기, 화면 구성에 대한 질문을 보낼 수 있습니다.</p>
+              <p>EDSN Frame이나 탐정의 녹음기에 대해 궁금한 점을 편하게 물어보세요.</p>
             </div>
             <div class="list-item">
-              <h3>회사 문의</h3>
-              <p>Studio YONA와 관련한 일반 협업 또는 회사 문의에 적합합니다.</p>
+              <h3>협업 제안</h3>
+              <p>Studio YONA와 함께하고 싶은 아이디어가 있다면 알려주세요.</p>
             </div>
             <div class="list-item">
-              <h3>심사 확인</h3>
-              <p>App Store 심사 후속 문의나 간단한 확인 요청에도 사용할 수 있습니다.</p>
+              <h3>기능 제안</h3>
+              <p>"이런 기능이 있으면 좋겠어요!" 같은 의견도 대환영입니다.</p>
             </div>
             <div class="list-item">
               <h3>버그 제보</h3>
-              <p>예상과 다르게 동작하는 화면이 있다면 스크린샷과 함께 보내 주세요.</p>
+              <p>앱이 이상하게 동작한다면 스크린샷과 함께 알려주세요. 빠르게 확인하겠습니다.</p>
             </div>
           </div>
         </section>
@@ -139,48 +167,58 @@
         <section class="section" data-reveal data-lang-block="en" hidden>
           <div class="section-head">
             <div>
-              <p class="eyebrow">Use cases</p>
-              <h2>Good for these messages.</h2>
+              <p class="eyebrow">What to write about</p>
+              <h2>We're looking forward to hearing about...</h2>
             </div>
           </div>
           <div class="list-grid">
             <div class="list-item">
               <h3>App questions</h3>
-              <p>Send questions about the app summary, release timing, or product screens.</p>
+              <p>Anything about EDSN Frame or Detective's Recorder — just ask.</p>
             </div>
             <div class="list-item">
-              <h3>Company inquiries</h3>
-              <p>Use this for general Studio YONA collaboration or company-related messages.</p>
+              <h3>Partnership ideas</h3>
+              <p>If you'd like to work with Studio YONA, we're all ears.</p>
             </div>
             <div class="list-item">
-              <h3>Review checks</h3>
-              <p>Useful for App Store review follow-ups or clarifications.</p>
+              <h3>Feature requests</h3>
+              <p>"It would be great if..." — we love hearing these!</p>
             </div>
             <div class="list-item">
               <h3>Bug reports</h3>
-              <p>Send a screenshot if something did not behave as expected.</p>
+              <p>If something's not working right, send a screenshot and we'll look into it quickly.</p>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer" data-lang-block="ko">
+      <footer class="footer footer-global" data-lang-block="ko">
         <div>© <span data-current-year></span> Studio YONA</div>
-        <div class="footer-links">
-          <a href="/ko/apps/edsn-frame/">EDSN Frame</a>
-          <a href="/ko/apps/edsn-frame/legal/privacy/">개인정보처리방침</a>
-          <a href="/ko/apps/edsn-frame/legal/terms/">이용약관</a>
-          <a href="/support/">고객지원</a>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            상호: 스튜디오 요나 | 대표: 이나영 | 개인정보관리책임자: 이나영 | 이메일:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            주소: 서울특별시 영등포구 대방천로12길 1, 419호 | 사업자등록번호: 392-20-02356 |
+            통신판매: 제 2026-서울영등포-0975 호
+          </p>
         </div>
       </footer>
 
-      <footer class="footer" data-lang-block="en" hidden>
+      <footer class="footer footer-global" data-lang-block="en" hidden>
         <div>© <span data-current-year></span> Studio YONA</div>
-        <div class="footer-links">
-          <a href="/en/apps/edsn-frame/">EDSN Frame</a>
-          <a href="/en/apps/edsn-frame/legal/privacy/">Privacy Policy</a>
-          <a href="/en/apps/edsn-frame/legal/terms/">Terms of Service</a>
-          <a href="/support/?lang=en">Support</a>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer:
+            Nayoung Lee | Email:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            Address: #419, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea |
+            Business Registration No.: 392-20-02356 | Mail-order business report:
+            2026-Seoul-Yeongdeungpo-0975
+          </p>
         </div>
       </footer>
     </div>

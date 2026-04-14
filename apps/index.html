@@ -3,80 +3,109 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Studio YONA의 앱 목록" />
+    <meta name="description" content="EDSN Frame, 탐정의 녹음기 — Studio YONA의 앱을 만나보세요." />
     <title>Studio YONA | 앱 소개</title>
     <link rel="canonical" href="https://www.studioyona.co.kr/apps/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css" />
-    <script defer src="/assets/site.js"></script>
+    <link rel="stylesheet" href="/assets/site.css?v=20260406h" />
+    <script defer src="/assets/site.js?v=20260406h"></script>
   </head>
   <body
+    class="compact-page"
     data-title-ko="Studio YONA | 앱 소개"
     data-title-en="Studio YONA | Apps"
-    data-description-ko="Studio YONA의 앱 목록"
-    data-description-en="Studio YONA app list and future app structure"
+    data-description-ko="EDSN Frame, 탐정의 녹음기 — Studio YONA의 앱을 만나보세요."
+    data-description-en="EDSN Frame, Detective's Recorder — meet the apps from Studio YONA."
   >
     <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+    <header class="home-header compact-header" data-lang-block="ko">
+      <a class="home-wordmark" href="/" aria-label="Studio YONA 홈">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="언어 전환">
+          <a href="/apps/" data-set-lang="ko">KR</a>
+          <a href="/apps/?lang=en" data-set-lang="en">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="menu-toggle-label" data-lang-inline="ko">메뉴</span>
+          <span class="menu-toggle-label" data-lang-inline="en" hidden>Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <header class="home-header compact-header" data-lang-block="en" hidden>
+      <a class="home-wordmark" href="/?lang=en" aria-label="Studio YONA home">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="Language switcher">
+          <a href="/apps/" data-set-lang="ko">KR</a>
+          <a href="/apps/?lang=en" data-set-lang="en">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="menu-toggle-label" data-lang-inline="ko">메뉴</span>
+          <span class="menu-toggle-label" data-lang-inline="en" hidden>Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="menu-overlay" id="site-menu" hidden data-menu>
+      <button class="menu-backdrop" type="button" aria-label="Close menu" data-menu-close></button>
+      <aside class="menu-sheet" aria-label="Site navigation">
+        <div class="menu-sheet-top">
+          <p class="menu-kicker">Studio YONA</p>
+          <button class="menu-close" type="button" data-menu-close>
+            <span data-lang-inline="ko">닫기</span>
+            <span data-lang-inline="en" hidden>Close</span>
+          </button>
+        </div>
+        <nav class="menu-nav" data-lang-block="ko">
+          <a data-nav-link href="/" data-menu-close>홈</a>
+          <a data-nav-link href="/about/" data-menu-close>회사 소개</a>
+          <a data-nav-link href="/apps/" data-menu-close>앱 소개</a>
+          <a data-nav-link href="/support/" data-menu-close>고객지원</a>
+          <a data-nav-link href="/contact/" data-menu-close>문의하기</a>
+        </nav>
+        <nav class="menu-nav" data-lang-block="en" hidden>
+          <a data-nav-link href="/?lang=en" data-menu-close>Home</a>
+          <a data-nav-link href="/about/?lang=en" data-menu-close>About</a>
+          <a data-nav-link href="/apps/?lang=en" data-menu-close>Apps</a>
+          <a data-nav-link href="/support/?lang=en" data-menu-close>Support</a>
+          <a data-nav-link href="/contact/?lang=en" data-menu-close>Contact</a>
+        </nav>
+      </aside>
+    </div>
+
     <div class="site-shell">
-      <header class="site-header" data-lang-block="ko">
-        <a class="brand" href="/" aria-label="Studio YONA 홈">
-          <img class="brand-mark" src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
-          <span>Studio YONA</span>
-        </a>
-        <nav class="nav" aria-label="주요 메뉴">
-          <a data-nav-link href="/">홈</a>
-          <a data-nav-link href="/about/">회사 소개</a>
-          <a data-nav-link href="/apps/">앱 소개</a>
-          <a data-nav-link href="/support/">고객지원</a>
-          <a data-nav-link href="/contact/">문의하기</a>
-          <span class="lang-switch" aria-label="언어 전환">
-            <a href="/apps/" data-set-lang="ko">KO</a>
-            <a href="/apps/?lang=en" data-set-lang="en">EN</a>
-          </span>
-        </nav>
-      </header>
-
-      <header class="site-header" data-lang-block="en" hidden>
-        <a class="brand" href="/?lang=en" aria-label="Studio YONA home">
-          <img class="brand-mark" src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
-          <span>Studio YONA</span>
-        </a>
-        <nav class="nav" aria-label="Primary navigation">
-          <a data-nav-link href="/">Home</a>
-          <a data-nav-link href="/about/">About</a>
-          <a data-nav-link href="/apps/">Apps</a>
-          <a data-nav-link href="/support/">Support</a>
-          <a data-nav-link href="/contact/">Contact</a>
-          <span class="lang-switch" aria-label="Language switcher">
-            <a href="/apps/" data-set-lang="ko">KO</a>
-            <a href="/apps/?lang=en" data-set-lang="en">EN</a>
-          </span>
-        </nav>
-      </header>
-
       <main id="content">
         <section class="hero" data-reveal data-lang-block="ko">
           <div class="hero-grid">
             <div>
               <p class="eyebrow">앱 소개</p>
-              <h1>지금은 하나, 앞으로는 여러 개.</h1>
+              <h1>우리 가족의 일상에서 태어난 앱들.</h1>
               <p>
-                현재 공개 예정 앱은 <strong>EDSN Frame</strong> 하나지만, 구조는 이후 새로운 앱이
-                추가돼도 자연스럽게 이어질 수 있게 설계했습니다.
+                포토부스에 못 가는 날 만든 EDSN Frame, 녹음 파일을 찾느라
+                고생하던 아빠를 위해 만든 탐정의 녹음기. Studio YONA의 앱은
+                모두 실제 필요에서 시작합니다.
               </p>
               <div class="hero-actions">
-                <a class="button" href="/ko/apps/edsn-frame/">EDSN Frame 상세</a>
-                <a class="button secondary" href="/support/">고객지원</a>
+                <a class="button" href="/ko/apps/edsn-frame/">EDSN Frame 보기</a>
+                <a class="button secondary" href="/ko/apps/detective-recorder/">탐정의 녹음기 보기</a>
               </div>
             </div>
             <div class="hero-side">
               <div class="hero-card">
-                <strong>1</strong>
-                <p>현재 공개 예정 앱 수.</p>
+                <strong>📸</strong>
+                <p>EDSN Frame — 내 폰이 포토부스</p>
               </div>
               <div class="hero-card">
-                <strong>∞</strong>
-                <p>추후 추가될 앱을 위한 확장 슬롯.</p>
+                <strong>🎙️</strong>
+                <p>탐정의 녹음기 — 누르면 바로 분류</p>
               </div>
             </div>
           </div>
@@ -86,24 +115,25 @@
           <div class="hero-grid">
             <div>
               <p class="eyebrow">Apps</p>
-              <h1>One app now, more later.</h1>
+              <h1>Born from our family's everyday life.</h1>
               <p>
-                The public portfolio starts with <strong>EDSN Frame</strong>, but the structure is
-                ready for future apps without redesign.
+                EDSN Frame was born on a day we couldn't visit a photo booth.
+                Detective's Recorder started because dad kept losing his recordings.
+                Every Studio YONA app begins with a real need.
               </p>
               <div class="hero-actions">
-                <a class="button" href="/en/apps/edsn-frame/">Open EDSN Frame</a>
-                <a class="button secondary" href="/support/?lang=en">Support</a>
+                <a class="button" href="/en/apps/edsn-frame/">EDSN Frame</a>
+                <a class="button secondary" href="/en/apps/detective-recorder/">Detective's Recorder</a>
               </div>
             </div>
             <div class="hero-side">
               <div class="hero-card">
-                <strong>1</strong>
-                <p>Current launch app count.</p>
+                <strong>📸</strong>
+                <p>EDSN Frame — A photo booth in your pocket</p>
               </div>
               <div class="hero-card">
-                <strong>∞</strong>
-                <p>A structure that can absorb future app cards.</p>
+                <strong>🎙️</strong>
+                <p>Detective's Recorder — Tap, record, organized</p>
               </div>
             </div>
           </div>
@@ -112,28 +142,31 @@
         <section class="section" data-reveal data-lang-block="ko">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Current release</p>
-              <h2>EDSN Frame</h2>
+              <p class="eyebrow">우리의 앱</p>
+              <h2>Studio YONA의 앱</h2>
             </div>
           </div>
           <div class="card-grid">
             <article class="card">
-              <span class="tag">Featured app</span>
-              <h3>EDSN Frame</h3>
-              <p>앱 이름, 기능, 출시 예정 시기, 스크린샷 슬롯, 법률 링크를 보여주는 상세 페이지입니다.</p>
+              <span class="tag">iOS 출시 중</span>
+              <h3>EDSN Frame (어디서나 프레임)</h3>
+              <p>내 스마트폰으로 언제 어디서나 포토부스처럼 귀여운 사진을 찍고, 다양한 프레임으로 추억을 꾸며 보세요.</p>
               <div class="card-actions">
-                <a class="button secondary" href="/ko/apps/edsn-frame/">상세 보기</a>
+                <a class="button secondary" href="/ko/apps/edsn-frame/">자세히 보기</a>
               </div>
             </article>
             <article class="card">
-              <span class="tag">Future slot</span>
-              <h3>Upcoming apps</h3>
-              <p>새 앱이 생기면 같은 구조의 카드와 상세 페이지를 이어 붙이면 됩니다.</p>
+              <span class="tag">출시 준비 중</span>
+              <h3>탐정의 녹음기</h3>
+              <p>카테고리를 누르면 바로 녹음이 시작되고 자동으로 분류됩니다. 강의, 회의, 일상 대화를 한눈에 정리하세요.</p>
+              <div class="card-actions">
+                <a class="button secondary" href="/ko/apps/detective-recorder/">자세히 보기</a>
+              </div>
             </article>
             <article class="card">
-              <span class="tag">Review ready</span>
-              <h3>App Store support</h3>
-              <p>지원과 정책 URL을 앱별 경로로 분리해 App Review 기준을 명확히 맞췄습니다.</p>
+              <span class="tag">안심하세요</span>
+              <h3>투명한 운영</h3>
+              <p>개인정보처리방침과 이용약관을 앱별로 공개하고 있으며, 궁금한 점은 언제든 이메일로 물어보실 수 있습니다.</p>
             </article>
           </div>
         </section>
@@ -141,52 +174,63 @@
         <section class="section" data-reveal data-lang-block="en" hidden>
           <div class="section-head">
             <div>
-              <p class="eyebrow">Current release</p>
-              <h2>EDSN Frame</h2>
+              <p class="eyebrow">Our apps</p>
+              <h2>Apps from Studio YONA</h2>
             </div>
           </div>
           <div class="card-grid">
             <article class="card">
-              <span class="tag">Featured app</span>
+              <span class="tag">Available on iOS</span>
               <h3>EDSN Frame</h3>
-              <p>The detail page holds the summary, features, release timing, screenshot slots, and legal links.</p>
+              <p>Turn your phone into a photo booth. Take cute group photos anytime, anywhere, with fun frames and effects.</p>
               <div class="card-actions">
-                <a class="button secondary" href="/en/apps/edsn-frame/">Open detail</a>
+                <a class="button secondary" href="/en/apps/edsn-frame/">Learn more</a>
               </div>
             </article>
             <article class="card">
-              <span class="tag">Future slot</span>
-              <h3>Upcoming apps</h3>
-              <p>Future app releases can reuse the same structure without changing the site foundation.</p>
+              <span class="tag">Coming soon</span>
+              <h3>Detective's Recorder</h3>
+              <p>Tap a category and recording starts instantly — auto-organized. Keep lectures, meetings, and daily conversations neatly sorted.</p>
+              <div class="card-actions">
+                <a class="button secondary" href="/en/apps/detective-recorder/">Learn more</a>
+              </div>
             </article>
             <article class="card">
-              <span class="tag">Review ready</span>
-              <h3>App Store support</h3>
-              <p>Support and policy URLs stay separated per app to keep review routing clear.</p>
+              <span class="tag">You're safe</span>
+              <h3>Transparent practices</h3>
+              <p>We publish privacy policies and terms for each app, and you can always reach us by email with questions.</p>
             </article>
           </div>
         </section>
       </main>
 
-      <footer class="footer" data-lang-block="ko">
+      <footer class="footer footer-global" data-lang-block="ko">
         <div>© <span data-current-year></span> Studio YONA</div>
-        <div class="footer-links">
-          <a href="/ko/apps/edsn-frame/">EDSN Frame</a>
-          <a href="/ko/apps/edsn-frame/legal/privacy/">개인정보처리방침</a>
-          <a href="/ko/apps/edsn-frame/legal/terms/">이용약관</a>
-          <a href="/support/">고객지원</a>
-          <a href="/contact/">문의하기</a>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            상호: 스튜디오 요나 | 대표: 이나영 | 개인정보관리책임자: 이나영 | 이메일:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            주소: 서울특별시 영등포구 대방천로12길 1, 419호 | 사업자등록번호: 392-20-02356 |
+            통신판매: 제 2026-서울영등포-0975 호
+          </p>
         </div>
       </footer>
 
-      <footer class="footer" data-lang-block="en" hidden>
+      <footer class="footer footer-global" data-lang-block="en" hidden>
         <div>© <span data-current-year></span> Studio YONA</div>
-        <div class="footer-links">
-          <a href="/en/apps/edsn-frame/">EDSN Frame</a>
-          <a href="/en/apps/edsn-frame/legal/privacy/">Privacy Policy</a>
-          <a href="/en/apps/edsn-frame/legal/terms/">Terms of Service</a>
-          <a href="/support/?lang=en">Support</a>
-          <a href="/contact/?lang=en">Contact</a>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer:
+            Nayoung Lee | Email:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            Address: #419, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea |
+            Business Registration No.: 392-20-02356 | Mail-order business report:
+            2026-Seoul-Yeongdeungpo-0975
+          </p>
         </div>
       </footer>
     </div>

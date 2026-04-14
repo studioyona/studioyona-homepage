@@ -10,24 +10,45 @@
     />
     <link rel="canonical" href="https://www.studioyona.co.kr/en/apps/edsn-frame/legal/privacy/" />
     <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css" />
+    <link rel="stylesheet" href="/assets/site.css?v=20260406h" />
+    <script defer src="/assets/site.js?v=20260406h"></script>
   </head>
-  <body class="app-page app-legal-page">
-    <div class="shell">
-      <header class="topbar">
-        <a class="brand" href="/en/apps/edsn-frame/">
-          <strong>Studio YONA</strong>
-          <span>EDSN Frame privacy policy</span>
-        </a>
-        <nav class="nav" aria-label="Primary">
-          <a href="/?lang=en">Home</a>
-          <a href="/en/apps/edsn-frame/" class="active">Apps</a>
-          <a href="/support/?lang=en">Support</a>
-          <a href="/contact/?lang=en">Contact</a>
+  <body class="app-page app-legal-page compact-page">
+    <header class="home-header compact-header">
+      <a class="home-wordmark" href="/en/apps/edsn-frame/" aria-label="EDSN Frame app detail">
+        <img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" />
+        <span>Studio YONA</span>
+      </a>
+      <div class="home-controls">
+        <div class="home-lang" aria-label="Language switcher">
           <a href="/ko/apps/edsn-frame/legal/privacy/">KR</a>
-        </nav>
-      </header>
+          <a href="/en/apps/edsn-frame/legal/privacy/" aria-current="page">EN</a>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="legal-menu-edsn-privacy-en" data-menu-toggle>
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
 
+    <div class="menu-overlay" id="legal-menu-edsn-privacy-en" hidden data-menu>
+      <button class="menu-backdrop" type="button" aria-label="Close menu" data-menu-close></button>
+      <aside class="menu-sheet" aria-label="Site navigation">
+        <div class="menu-sheet-top">
+          <p class="menu-kicker">Studio YONA</p>
+          <button class="menu-close" type="button" data-menu-close>Close</button>
+        </div>
+        <nav class="menu-nav">
+          <a href="/?lang=en" data-menu-close>Home</a>
+          <a href="/about/?lang=en" data-menu-close>About</a>
+          <a href="/apps/?lang=en" data-menu-close>Apps</a>
+          <a href="/support/?lang=en" data-menu-close>Support</a>
+          <a href="/contact/?lang=en" data-menu-close>Contact</a>
+        </nav>
+      </aside>
+    </div>
+
+    <div class="shell">
       <main>
         <section class="hero">
           <article class="card hero-copy">
@@ -106,14 +127,19 @@
         </div>
       </main>
 
-      <footer class="footer">
-        <div class="footer-row">
-          <div>Studio YONA · EDSN Frame Privacy Policy</div>
-          <div class="footer-links">
-            <a href="/en/apps/edsn-frame/">App detail</a>
-            <a href="/en/apps/edsn-frame/legal/terms/">Terms</a>
-            <a href="/ko/apps/edsn-frame/legal/privacy/">한국어</a>
-          </div>
+      <footer class="footer footer-global">
+        <div>© <span data-current-year></span> Studio YONA</div>
+        <div class="footer-business">
+          <p class="footer-business-line">
+            Business name: Studio YONA | Representative: Nayoung Lee | Privacy Officer:
+            Nayoung Lee | Email:
+            <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a>
+          </p>
+          <p class="footer-business-line">
+            Address: #419, 1, Daebangcheon-ro 12-gil, Yeongdeungpo-gu, Seoul, Republic of Korea |
+            Business Registration No.: 392-20-02356 | Mail-order business report:
+            2026-Seoul-Yeongdeungpo-0975
+          </p>
         </div>
       </footer>
     </div>
