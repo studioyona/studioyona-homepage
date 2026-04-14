@@ -51,6 +51,9 @@
 - 모든 페이지 footer strip의 상단 여백을 늘려, 구분선이 바로 위 카드/박스와 붙어 보이지 않도록 조정했다.
 - footer strip은 `padding-top`이 아니라 `margin-top`으로도 간격을 확보해, 구분선 자체가 위 박스에서 더 떨어져 보이도록 다시 조정했다.
 - footer strip 하단 패딩을 줄여, 주소 아래쪽에 남는 빈 공간이 덜 보이도록 조정했다.
+- GitHub 웹 업로드와 GitHub Pages 설정, 호스팅케이알 DNS 연결을 통해 `www.studioyona.co.kr` 공개 배포를 완료했다.
+- 무료 GitHub Pages public 운영 유지 여부와 GitHub Desktop push 오류를 미해결 운영 이슈로 문서화했다.
+- README와 배포 문서를 현재 공개 운영 상태 기준으로 갱신하고, 이후 수정/배포 운영 절차를 정리했다.
 # 2026-04-14
 
 - Improved local Safari preview reliability by introducing a no-cache static preview server and updating the preview launchers to use it, reducing stale asset/cache mismatches during homepage QA.

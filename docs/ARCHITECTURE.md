@@ -140,3 +140,33 @@
     - 좁은 화면에서도 상단이 훨씬 단정해진다.
   - 단점:
     - 기존 상단 내비게이션에 바로 노출되던 법률 링크는 상세 본문/푸터 링크에 더 의존하게 된다.
+
+## Open Decisions / Pending Issues
+
+### 2026-04-14 - Deployment Model Must Be Revisited Before Adding Admin Features
+
+- Current state:
+  - 홈페이지는 `GitHub Pages + public repository + static files` 조합으로 무료 배포 중이다.
+  - 현재 구조는 정적 콘텐츠, 이메일 문의, 앱 소개/법률 링크 중심이라 보안 표면이 작다.
+- Open issue:
+  - 향후 관리자 기능, 인증, 업로드, API 연동, 비밀키 사용이 필요한 기능이 들어오면 현재 public static deployment는 더 이상 적합하지 않을 수 있다.
+- Decision pending:
+  - 계속 무료 정적 배포를 유지할지
+  - 관리 기능 도입 시 별도 백엔드/호스팅으로 분리할지
+  - GitHub Pages 이외의 배포 방식 또는 유료 플랜으로 전환할지
+- Follow-up trigger:
+  - 관리자 페이지, 로그인, 파일 업로드, 데이터 저장, 외부 API 비밀값이 필요한 기능이 요구되는 시점
+
+### 2026-04-14 - GitHub Desktop Push Failure Remains Unresolved
+
+- Current state:
+  - 로컬 Git 저장소 커밋은 정상 동작한다.
+  - GitHub 웹 업로드를 통해 `studioyona/studioyona-homepage` 저장소와 GitHub Pages 배포는 성공했다.
+  - 그러나 GitHub Desktop에서는 `Publish branch` / `Push origin` 시 `The repository does not seem to exist anymore` 오류가 계속 발생했다.
+- Open issue:
+  - GitHub Desktop의 원격 저장소 인식 또는 인증 캐시 문제의 근본 원인은 아직 해결되지 않았다.
+- Decision pending:
+  - 이 문제를 계속 GitHub Desktop 기준으로 해결할지
+  - 앞으로는 웹 업로드 또는 터미널 Git 중심으로 운영할지
+- Follow-up trigger:
+  - 다음 코드 수정 이후 Desktop 기반 push를 다시 시도해야 하거나, 비개발자 협업 흐름에서 GitHub Desktop 사용이 꼭 필요해지는 시점

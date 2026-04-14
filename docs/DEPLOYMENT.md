@@ -6,6 +6,20 @@
 - canonical 도메인은 `https://www.studioyona.co.kr`를 사용한다.
 - MVP 기준으로 빌드 없는 정적 사이트를 그대로 배포한다.
 
+## Current Live State
+
+- 공개 URL: `https://www.studioyona.co.kr`
+- GitHub Pages source: `main` branch `/ (root)`
+- Custom domain: `www.studioyona.co.kr`
+- DNS:
+  - `CNAME | www | studioyona.github.io`
+  - `A | @ | 185.199.108.153`
+  - `A | @ | 185.199.109.153`
+  - `A | @ | 185.199.110.153`
+  - `A | @ | 185.199.111.153`
+- HTTPS: 활성화 및 적용 확인
+- 브라우저 확인: Safari에서 실접속 확인 완료
+
 ## Deployment Target
 
 - Hosting: `GitHub Pages`
@@ -55,6 +69,7 @@
 
 - GitHub는 빌드 제어가 필요 없으면 branch publishing을 권장한다.
 - branch publishing을 사용할 때 custom domain을 설정하면 GitHub가 source branch 루트에 `CNAME` 파일을 반영할 수 있다.
+- 현재 저장소는 Pages 사용을 위해 `public` 상태로 운영 중이다.
 
 ## DNS Checklist
 
@@ -177,6 +192,32 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 3. `https://www.studioyona.co.kr/apps/edsn-frame/legal/privacy/`
 4. `https://www.studioyona.co.kr/apps/edsn-frame/legal/terms/`
 5. `https://studioyona.co.kr/`가 `www` 기준으로 정리되는지 확인
+
+현재 확인 완료 항목:
+
+- `https://www.studioyona.co.kr/`
+- `https://www.studioyona.co.kr/?lang=en`
+- `https://www.studioyona.co.kr/apps/edsn-frame/legal/privacy/`
+- `https://www.studioyona.co.kr/apps/edsn-frame/legal/terms/`
+- `https://www.studioyona.co.kr/apps/detective-recorder/legal/privacy/`
+- `https://www.studioyona.co.kr/apps/detective-recorder/legal/terms/`
+- `Enforce HTTPS` 활성화
+
+## Ongoing Operating Procedure
+
+현재 기준 권장 운영 흐름:
+
+1. 로컬에서 수정
+2. Safari 로컬 미리보기로 확인
+3. 문서(`CHANGELOG`, 필요 시 `ARCHITECTURE`, worklog) 업데이트
+4. 로컬 Git 커밋
+5. GitHub Desktop push는 현재 불안정하므로, 필요 시 GitHub 웹 업로드 또는 별도 Git 흐름 사용
+6. 공개 사이트에서 최종 링크/도메인 확인
+
+주의:
+
+- Pages 운영을 유지하려면 저장소를 다시 `private`로 바꾸지 않는다.
+- 관리자 기능, 인증, 업로드, 비밀키가 필요한 기능이 생기면 현재 GitHub Pages public 구조를 다시 평가한다.
 
 ## Quick Start Checklist
 

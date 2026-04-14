@@ -1,7 +1,7 @@
 # Studio YONA Homepage MVP Plan
 
 Date: 2026-04-05
-Status: implementation-aligned, refinement-pending
+Status: deployed-on-github-pages, operational-decisions-pending
 
 ## 1. Goal
 
@@ -513,15 +513,28 @@ Status: implementation-aligned, refinement-pending
 - `/` 한국어 우선 진입과 완전한 언어 선택형 진입 사이의 UX 결정은 구현 직전에 확정해야 한다.
 - Gmail 운영 방식이 바뀌면 개인정보처리방침의 제3자 처리 고지도 함께 갱신해야 한다.
 
+## 13-1. Current Deployment Snapshot
+
+- GitHub 웹 업로드를 통해 현재 정적 파일 세트가 `studioyona/studioyona-homepage` 저장소에 반영되었다.
+- GitHub Pages는 `main` 브랜치 `/ (root)` 기준으로 활성화되었다.
+- 커스텀 도메인 `www.studioyona.co.kr`는 GitHub Pages에 연결되었고, DNS check success 상태까지 확인되었다.
+- 실제 Safari 브라우저에서 `https://www.studioyona.co.kr` 접속 확인이 끝난 상태다.
+
+## 13-2. Open Operational Decisions
+
+- GitHub Pages 무료/public 운영을 계속 유지할지, 향후 관리자 기능 도입 전에 다른 배포 방식 또는 유료 플랜으로 전환할지 결정이 필요하다.
+- GitHub Desktop에서 `Publish branch` / `Push origin` 실패 문제는 우회 배포로 넘어갔지만, 근본 해결은 아직 남아 있다.
+- 따라서 현재 배포는 성공했지만, 장기 운영 방식과 Desktop 기반 Git 흐름은 아직 확정되지 않았다.
+
 ## 14. Recommended Next Step
 
 다음 작업에서는 아래를 한 번에 진행하는 것이 효율적이다.
 
-1. 홈 원페이지 카피, 줄바꿈, 오버레이 메뉴, 헤더 고정 디테일 고도화
-2. 앱 상세/지원/문의 페이지의 헤더 경험을 홈과 일관되게 정리
+1. 실제 운영 브라우저 기준으로 한국어/영어 전환, 앱별 법률 링크, 지원 이메일 링크 최종 점검
+2. `Enforce HTTPS` 활성화 여부 확인 및 적용
 3. 앱별 실제 스크린샷/브랜드 에셋 반영
 4. 정책 문구 최종 검토
-5. GitHub Pages 업로드 및 도메인 연결
+5. GitHub Pages public 운영 지속 여부와 GitHub Desktop push 오류 해결 전략 결정
 
 ## 15. Done Criteria For Next Implementation Task
 
