@@ -58,6 +58,7 @@
 - GitHub Desktop/Git fetch 문제와 public 저장소 404 현상에 대해 GitHub Support 티켓을 제출했고, 후속 응답 대기 상태를 문서에 반영했다.
 - GitHub Support 답변으로 저장소명이 `studioyona-hompage`였다는 오타 원인을 확인했고, SSH remote를 교정해 Git fetch가 정상 동작하도록 정리했다.
 - GitHub 저장소명을 `studioyona-homepage`로 바로잡고, local `origin`과 GitHub Desktop/CLI fetch-push 흐름까지 정상화했다.
+- 향후 관리자 기능 도입에 대비해 `GitHub Pages 유지`, `GitHub Pages + 별도 서버리스`, `전체 플랫폼 이전`의 3단계 배포 전략 비교와 기본 추천 경로를 문서화했다.
 # 2026-04-14
 
 - Improved local Safari preview reliability by introducing a no-cache static preview server and updating the preview launchers to use it, reducing stale asset/cache mismatches during homepage QA.

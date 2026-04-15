@@ -53,6 +53,14 @@ rg --files
   - 관리자 기능, 인증, 업로드, 비밀키가 필요한 기능이 추가되기 전에는 배포 방식을 다시 검토해야 한다
   - GitHub Desktop / CLI Git 흐름은 저장소명 오타(`studioyona-hompage`)를 바로잡고 SSH remote를 교정한 뒤 정상화되었다
 
+## Admin Feature Direction
+
+- 현재 추천 기본값은 `GitHub Pages`를 유지하고, 필요 시 `관리자/API만 별도 서버리스`로 분리하는 것이다.
+- 이유:
+  - 정적 공개 홈페이지는 지금 구조에 잘 맞고 비용이 낮다.
+  - 관리자 기능이 생기면 비밀값, 인증, 업로드, 데이터 처리를 브라우저 바깥으로 옮길 수 있다.
+- 사이트 전체를 다른 플랫폼으로 옮기는 것은 관리자 기능이 사이트 핵심이 되는 시점에 다시 판단한다.
+
 ## Documentation
 
 - [docs/DOCS_RULES.md](/Users/Captain/Projects/VibeCoding/Studio YONA HomePage/docs/DOCS_RULES.md)

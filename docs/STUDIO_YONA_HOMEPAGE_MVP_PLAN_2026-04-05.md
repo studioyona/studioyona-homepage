@@ -94,6 +94,23 @@ Status: deployed-on-github-pages, operational-decisions-pending
 - 뉴스레터
 - 데이터베이스
 
+## 4-1. Post-MVP Admin Strategy
+
+향후 관리자 기능이 필요해질 때의 기본 판단 기준:
+
+| Option | Hosting Model | Cost Expectation | Security Posture | Operational Complexity | Recommended Use |
+| --- | --- | --- | --- | --- | --- |
+| A | GitHub Pages only | 최저, 현재 0원 | 정적 공개 사이트에 적합. 관리자/비밀값 처리에는 부적합 | 가장 단순 | 현재처럼 소개/법률/지원 중심의 정적 홈페이지만 있을 때 |
+| B | GitHub Pages + 별도 서버리스 함수 | 초기에는 무료 범위 가능 | 관리자/API/비밀키를 브라우저 밖으로 분리 가능 | 중간 | 관리자 기능, 인증, 업로드, API 보호가 필요하지만 사이트 본문은 정적이어도 될 때 |
+| C | 전체를 함수 포함 플랫폼으로 이전 | 무료 한도 또는 유료 전환 가능 | 관리자/동적 기능/인증을 한 플랫폼에서 통합 관리 가능 | 가장 높음 | 관리자 기능이 사이트 핵심이 되거나, 전체가 동적 페이지/DB/API에 의존하게 될 때 |
+
+운영 해석:
+
+- 현재 Studio YONA 기준 기본값은 `A`다.
+- 관리자 기능이 실제 요구되면 1차 기본 추천은 `B`다.
+- `B`로도 운영이 번거롭거나 기능 범위가 커지면 `C`를 검토한다.
+- 어떤 선택을 하든 브라우저로 내려가는 프론트엔드 코드는 사용자에게 보일 수 있으므로, 숨겨야 하는 로직과 비밀값은 서버/서버리스에 둔다.
+
 ## 5. Information Architecture
 
 추천 구조:
