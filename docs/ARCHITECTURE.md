@@ -157,7 +157,7 @@
 - Follow-up trigger:
   - 관리자 페이지, 로그인, 파일 업로드, 데이터 저장, 외부 API 비밀값이 필요한 기능이 요구되는 시점
 
-### 2026-04-14 - GitHub Desktop Push Failure Remains Unresolved
+### 2026-04-14 - GitHub Desktop Push Failure Resolved By Repository Name Fix
 
 - Current state:
   - 로컬 Git 저장소 커밋은 정상 동작한다.
@@ -170,6 +170,7 @@
 - Resolution:
   - 이번 이슈의 근본 원인은 GitHub Desktop 자체 버그보다 저장소 이름 오타였다.
   - HTTPS/OAuth/SSH 문제로 보였던 증상은 모두 잘못된 저장소 경로를 바라보면서 발생한 2차 증상이었고, SSH 전용 계정 분리와 remote 교정으로 원인을 재현/확인했다.
-- Remaining follow-up:
-  - 저장소명을 원하는 형태(`studioyona-homepage`)로 GitHub 웹에서 rename할지 결정
-  - rename 후 local `origin` URL과 GitHub Desktop 인식을 새 이름으로 다시 맞출지 결정
+- Completion:
+  - GitHub 웹에서 저장소명을 `studioyona-homepage`로 rename했다.
+  - local `origin`도 `git@github-studioyona:studioyona/studioyona-homepage.git`로 재설정했다.
+  - 이후 `git fetch origin`, `git push origin main`, GitHub Desktop `Fetch origin`이 모두 정상 동작했다.

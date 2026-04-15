@@ -11,7 +11,7 @@
 - 이 저장소는 `초기 세팅`, `MVP 기획`, `원페이지 홈 리디자인`, `정적 사이트 MVP 구현`, `GitHub Pages 배포`까지 완료된 상태다.
 - 현재는 한국어 우선 원페이지 홈, 같은 경로 내 영어 토글, `EDSN Frame`과 `탐정의 녹음기` 앱 상세, 앱별 개인정보처리방침/이용약관, 배포 문서가 들어 있다.
 - 실제 공개 사이트는 `https://www.studioyona.co.kr` 에서 열리며, 커스텀 도메인과 HTTPS 적용까지 확인되었다.
-- 다만 장기 운영 관점에서는 `GitHub Pages public 운영 유지 여부`와 `GitHub Desktop push 오류`가 아직 열린 이슈다.
+- 다만 장기 운영 관점에서는 `GitHub Pages public 운영 유지 여부`가 아직 열린 이슈다.
 
 ## Project Goals
 
@@ -51,7 +51,7 @@ rg --files
 - 주의:
   - 저장소는 Pages 운영을 위해 현재 `public` 상태다
   - 관리자 기능, 인증, 업로드, 비밀키가 필요한 기능이 추가되기 전에는 배포 방식을 다시 검토해야 한다
-  - GitHub Desktop의 `Publish branch / Push origin` 오류는 아직 해결되지 않았으므로, 다음 수정 때는 같은 문제를 다시 만날 수 있다
+  - GitHub Desktop / CLI Git 흐름은 저장소명 오타(`studioyona-hompage`)를 바로잡고 SSH remote를 교정한 뒤 정상화되었다
 
 ## Documentation
 

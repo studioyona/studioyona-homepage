@@ -211,7 +211,7 @@ curl -I http://127.0.0.1:8123/en/apps/detective-recorder/legal/privacy/
 2. Safari 로컬 미리보기로 확인
 3. 문서(`CHANGELOG`, 필요 시 `ARCHITECTURE`, worklog) 업데이트
 4. 로컬 Git 커밋
-5. GitHub Desktop push는 현재 불안정하므로, 필요 시 GitHub 웹 업로드 또는 별도 Git 흐름 사용
+5. 기본 수정 반영은 GitHub Desktop 또는 CLI push로 진행하고, 긴급 상황에서만 GitHub 웹 업로드를 보조 수단으로 사용
 6. 공개 사이트에서 최종 링크/도메인 확인
 
 주의:

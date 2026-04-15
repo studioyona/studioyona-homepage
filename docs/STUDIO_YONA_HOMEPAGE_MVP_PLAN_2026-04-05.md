@@ -515,16 +515,16 @@ Status: deployed-on-github-pages, operational-decisions-pending
 
 ## 13-1. Current Deployment Snapshot
 
-- GitHub 웹 업로드를 통해 현재 정적 파일 세트가 `studioyona/studioyona-homepage` 저장소에 반영되었다.
+- GitHub 웹 업로드와 이후 Git remote 정리를 통해 현재 정적 파일 세트가 `studioyona/studioyona-homepage` 저장소에 반영되었다.
 - GitHub Pages는 `main` 브랜치 `/ (root)` 기준으로 활성화되었다.
 - 커스텀 도메인 `www.studioyona.co.kr`는 GitHub Pages에 연결되었고, DNS check success 상태까지 확인되었다.
 - 실제 Safari 브라우저에서 `https://www.studioyona.co.kr` 접속 확인이 끝난 상태다.
+- GitHub Desktop / CLI fetch-push 흐름도 저장소명 오타 수정과 SSH remote 교정 이후 정상화되었다.
 
 ## 13-2. Open Operational Decisions
 
 - GitHub Pages 무료/public 운영을 계속 유지할지, 향후 관리자 기능 도입 전에 다른 배포 방식 또는 유료 플랜으로 전환할지 결정이 필요하다.
-- GitHub Desktop에서 `Publish branch` / `Push origin` 실패 문제는 우회 배포로 넘어갔지만, 근본 해결은 아직 남아 있다.
-- 따라서 현재 배포는 성공했지만, 장기 운영 방식과 Desktop 기반 Git 흐름은 아직 확정되지 않았다.
+- 따라서 현재 배포와 기본 Git 운영 흐름은 정상화되었고, 남은 의사결정은 장기 배포 방식에 대한 것뿐이다.
 
 ## 14. Recommended Next Step
 
@@ -534,7 +534,7 @@ Status: deployed-on-github-pages, operational-decisions-pending
 2. `Enforce HTTPS` 활성화 여부 확인 및 적용
 3. 앱별 실제 스크린샷/브랜드 에셋 반영
 4. 정책 문구 최종 검토
-5. GitHub Pages public 운영 지속 여부와 GitHub Desktop push 오류 해결 전략 결정
+5. GitHub Pages public 운영 지속 여부와 향후 관리자 기능 도입 시 배포 전략 결정
 
 ## 15. Done Criteria For Next Implementation Task
 
