@@ -164,17 +164,12 @@
   - GitHub 웹 업로드를 통해 `studioyona/studioyona-homepage` 저장소와 GitHub Pages 배포는 성공했다.
   - 그러나 GitHub Desktop에서는 `Publish branch` / `Push origin` 시 `The repository does not seem to exist anymore` 오류가 계속 발생했다.
 - Latest finding:
-  - `studioyona` 전용 SSH 키를 새로 등록한 뒤에도 `git fetch origin`은 `ERROR: Repository not found.`로 실패했다.
-  - 브라우저 시크릿 창과 `curl` 기준으로 `https://github.com/studioyona/studioyona-homepage`는 여전히 `404`를 반환했다.
-  - 동시에 GitHub 웹의 로그인 상태 화면과 `Danger Zone`에서는 저장소가 `Public`으로 표시됐다.
-  - GitHub Support 티켓은 2026-04-15에 제출 완료했다.
-- Open issue:
-  - 단순한 GitHub Desktop 인증 꼬임이 아니라, GitHub 쪽에서 저장소를 public/API/git transport 경로로 일관되게 노출하지 않는 상태일 가능성이 높다.
-  - 따라서 현재 증상은 `Desktop push bug`라기보다 `GitHub-side repository visibility/access anomaly`에 가깝다.
-- Decision pending:
-  - GitHub Support 답변을 기다리며 저장소 공개 접근 상태를 먼저 정상화할지
-  - 문제가 풀릴 때까지 웹 업로드 기준 운영을 유지할지
-  - 그 이후 GitHub Desktop 또는 터미널 Git을 다시 기본 배포 흐름으로 복귀시킬지
-- Follow-up trigger:
-  - GitHub 저장소 URL이 시크릿 창에서도 정상 열리는 시점
-  - 또는 GitHub Support 답변으로 public/API 접근 상태가 복구된 시점
+  - GitHub Support 티켓 `#4284249` 답변으로 원인이 확인됐다.
+  - 실제 저장소명은 `studioyona-hompage`였고, 기존 local/desktop remote는 `studioyona-homepage`를 가리키는 오타 상태였다.
+  - SSH remote를 `git@github-studioyona:studioyona/studioyona-hompage.git`로 수정한 뒤 `git fetch origin`이 정상 동작했다.
+- Resolution:
+  - 이번 이슈의 근본 원인은 GitHub Desktop 자체 버그보다 저장소 이름 오타였다.
+  - HTTPS/OAuth/SSH 문제로 보였던 증상은 모두 잘못된 저장소 경로를 바라보면서 발생한 2차 증상이었고, SSH 전용 계정 분리와 remote 교정으로 원인을 재현/확인했다.
+- Remaining follow-up:
+  - 저장소명을 원하는 형태(`studioyona-homepage`)로 GitHub 웹에서 rename할지 결정
+  - rename 후 local `origin` URL과 GitHub Desktop 인식을 새 이름으로 다시 맞출지 결정
