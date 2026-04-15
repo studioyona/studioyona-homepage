@@ -54,6 +54,8 @@
 - GitHub 웹 업로드와 GitHub Pages 설정, 호스팅케이알 DNS 연결을 통해 `www.studioyona.co.kr` 공개 배포를 완료했다.
 - 무료 GitHub Pages public 운영 유지 여부와 GitHub Desktop push 오류를 미해결 운영 이슈로 문서화했다.
 - README와 배포 문서를 현재 공개 운영 상태 기준으로 갱신하고, 이후 수정/배포 운영 절차를 정리했다.
+- GitHub Desktop push 문제를 다시 진단한 결과, 휴지통 복구 이슈보다 GitHub 저장소 공개 접근 상태 이상 가능성이 더 높다는 최신 판단을 문서에 반영했다.
+- GitHub Desktop/Git fetch 문제와 public 저장소 404 현상에 대해 GitHub Support 티켓을 제출했고, 후속 응답 대기 상태를 문서에 반영했다.
 # 2026-04-14
 
 - Improved local Safari preview reliability by introducing a no-cache static preview server and updating the preview launchers to use it, reducing stale asset/cache mismatches during homepage QA.

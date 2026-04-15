@@ -163,10 +163,18 @@
   - 로컬 Git 저장소 커밋은 정상 동작한다.
   - GitHub 웹 업로드를 통해 `studioyona/studioyona-homepage` 저장소와 GitHub Pages 배포는 성공했다.
   - 그러나 GitHub Desktop에서는 `Publish branch` / `Push origin` 시 `The repository does not seem to exist anymore` 오류가 계속 발생했다.
+- Latest finding:
+  - `studioyona` 전용 SSH 키를 새로 등록한 뒤에도 `git fetch origin`은 `ERROR: Repository not found.`로 실패했다.
+  - 브라우저 시크릿 창과 `curl` 기준으로 `https://github.com/studioyona/studioyona-homepage`는 여전히 `404`를 반환했다.
+  - 동시에 GitHub 웹의 로그인 상태 화면과 `Danger Zone`에서는 저장소가 `Public`으로 표시됐다.
+  - GitHub Support 티켓은 2026-04-15에 제출 완료했다.
 - Open issue:
-  - GitHub Desktop의 원격 저장소 인식 또는 인증 캐시 문제의 근본 원인은 아직 해결되지 않았다.
+  - 단순한 GitHub Desktop 인증 꼬임이 아니라, GitHub 쪽에서 저장소를 public/API/git transport 경로로 일관되게 노출하지 않는 상태일 가능성이 높다.
+  - 따라서 현재 증상은 `Desktop push bug`라기보다 `GitHub-side repository visibility/access anomaly`에 가깝다.
 - Decision pending:
-  - 이 문제를 계속 GitHub Desktop 기준으로 해결할지
-  - 앞으로는 웹 업로드 또는 터미널 Git 중심으로 운영할지
+  - GitHub Support 답변을 기다리며 저장소 공개 접근 상태를 먼저 정상화할지
+  - 문제가 풀릴 때까지 웹 업로드 기준 운영을 유지할지
+  - 그 이후 GitHub Desktop 또는 터미널 Git을 다시 기본 배포 흐름으로 복귀시킬지
 - Follow-up trigger:
-  - 다음 코드 수정 이후 Desktop 기반 push를 다시 시도해야 하거나, 비개발자 협업 흐름에서 GitHub Desktop 사용이 꼭 필요해지는 시점
+  - GitHub 저장소 URL이 시크릿 창에서도 정상 열리는 시점
+  - 또는 GitHub Support 답변으로 public/API 접근 상태가 복구된 시점
