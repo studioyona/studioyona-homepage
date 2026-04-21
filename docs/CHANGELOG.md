@@ -72,6 +72,7 @@
 - EDSN Frame 한글/영문 개인정보처리방침에서 처리 목적 도입 문구와 국외 이전 draft 문구를 제거하고, 보유기간 placeholder와 물리적 조치 placeholder를 공개용 문구로 정리했다.
 - EDSN Frame 한글/영문 이용약관·개인정보처리방침 상단의 `App-scoped document` 표시를 제거했다.
 - EDSN Frame 한글/영문 개인정보처리방침의 제3자 제공 항목 아래에 남아 있던 draft 안내 문장도 공개 페이지에서 제거했다.
+- EDSN Frame 개인정보처리방침 표가 확대된 화면이나 좁은 폭에서 첫 번째 열이 과하게 눌리며 레이아웃이 깨지는 문제를 막기 위해, 법률 표 래퍼/열 최소폭/고정 레이아웃 규칙을 보강했다.
 # 2026-04-14
 
 - Improved local Safari preview reliability by introducing a no-cache static preview server and updating the preview launchers to use it, reducing stale asset/cache mismatches during homepage QA.
