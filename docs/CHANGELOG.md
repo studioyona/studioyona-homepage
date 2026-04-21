@@ -58,6 +58,7 @@
 - GitHub Desktop/Git fetch 문제와 public 저장소 404 현상에 대해 GitHub Support 티켓을 제출했고, 후속 응답 대기 상태를 문서에 반영했다.
 - GitHub Support 답변으로 저장소명이 `studioyona-hompage`였다는 오타 원인을 확인했고, SSH remote를 교정해 Git fetch가 정상 동작하도록 정리했다.
 - GitHub 저장소명을 `studioyona-homepage`로 바로잡고, local `origin`과 GitHub Desktop/CLI fetch-push 흐름까지 정상화했다.
+- EDSN Frame 영어 이용약관/개인정보처리방침을 더 이상 요약형 초안이 아니라 한국어 원문 구조와 항목 수에 맞춘 전문 번역본으로 교체했다.
 - 향후 관리자 기능 도입에 대비해 `GitHub Pages 유지`, `GitHub Pages + 별도 서버리스`, `전체 플랫폼 이전`의 3단계 배포 전략 비교와 기본 추천 경로를 문서화했다.
 - EDSN Frame 한국어 개인정보처리방침과 이용약관을 2026-04-20 draft 원문 기준으로 전면 갱신했다.
 - EDSN Frame 한국어 법률 페이지에 표/코드/목록용 전용 스타일을 추가하고, 웹에서 노출되기 어색한 내부 결제 정책 경로 문구를 일반 결제 정책 안내 문장으로 정리했다.
@@ -67,6 +68,10 @@
 - EDSN Frame 한국어 개인정보처리방침/이용약관 페이지에서 `문서 안내` 사이드 카드를 제거하고, 본문 레이아웃을 단일 컬럼으로 정리했다.
 - EDSN Frame 한국어 개인정보처리방침/이용약관 상단의 일반 안내 문구도 제거해 제목만 남도록 정리했다.
 - EDSN Frame 법률 문서 공개 페이지에서는 draft 메모를 제거하되, 실제 운영 전에는 시행일을 최종 확정해 공개 페이지에 반드시 표기해야 한다는 운영 메모를 문서에 남겼다.
+- EDSN Frame 영어 개인정보처리방침/이용약관도 한국어와 같은 공개용 톤으로 맞추기 위해 상단 안내 문구와 요약 사이드 카드를 제거했다.
+- EDSN Frame 한글/영문 개인정보처리방침에서 처리 목적 도입 문구와 국외 이전 draft 문구를 제거하고, 보유기간 placeholder와 물리적 조치 placeholder를 공개용 문구로 정리했다.
+- EDSN Frame 한글/영문 이용약관·개인정보처리방침 상단의 `App-scoped document` 표시를 제거했다.
+- EDSN Frame 한글/영문 개인정보처리방침의 제3자 제공 항목 아래에 남아 있던 draft 안내 문장도 공개 페이지에서 제거했다.
 # 2026-04-14
 
 - Improved local Safari preview reliability by introducing a no-cache static preview server and updating the preview launchers to use it, reducing stale asset/cache mismatches during homepage QA.
