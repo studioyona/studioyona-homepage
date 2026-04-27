@@ -101,6 +101,11 @@
                       <td>Internal user ID, point balance, achievement progress, shop ownership, quantity of photobooth film, and invite code/reward status</td>
                     </tr>
                     <tr>
+                      <td>Required</td>
+                      <td>Prevent repeated fraudulent claiming of referral rewards and free/reward grants</td>
+                      <td>Apple/Google account identifier hash processed with server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
+                    </tr>
+                    <tr>
                       <td>Optional</td>
                       <td>Handling customer inquiries, receiving feedback, processing account deletion, and handling complaints</td>
                       <td>Inquiry email address, inquiry contents, app version, iOS version, device model, and any diagnostic summary or screenshots attached by the user</td>
@@ -159,6 +164,10 @@
                       <td>Until consent is withdrawn, app settings are changed, or the relevant purpose is achieved. It may be retained for up to 3 or 5 years in accordance with applicable laws.</td>
                     </tr>
                     <tr>
+                      <td>Hash records used to prevent fraudulent repeated claiming of referral rewards and free/reward grants</td>
+                      <td>400 days by default from the event date. If retention is required by law or for dispute handling, the record may be separately retained for the required period.</td>
+                    </tr>
+                    <tr>
                       <td>Feedback/inquiry and account deletion response records</td>
                       <td>Until processing is completed and thereafter for any period required by applicable law or dispute response needs</td>
                     </tr>
@@ -184,6 +193,7 @@
                   </ul>
                 </li>
               </ol>
+              <p>Hash records used for fraud and abuse prevention do not store original Apple/Google account identifiers, email addresses, device names, or advertising identifiers, and are deleted when the retention period expires.</p>
             </div>
 
             <div class="section">

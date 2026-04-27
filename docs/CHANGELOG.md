@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- EDSN Frame이 아직 App Store 출시 전 상태임을 반영해, 회사 소개/앱 소개/앱 상세 페이지의 한국어·영어 공개 문구를 `출시 예정` 기준으로 조정했다.
+
 - `Studio YONA HomePage` 워크스페이스 초기 세팅을 추가했다.
 - 기본 문서 세트(`README`, `DOCS_RULES`, `CHANGELOG`, `ARCHITECTURE`, `worklog template`, `initial worklog`)를 생성했다.
 - `Studio YONA` 회사 홈페이지의 MVP 기획안 문서를 추가했다.
@@ -75,6 +77,8 @@
 - EDSN Frame 개인정보처리방침 표가 확대된 화면이나 좁은 폭에서 첫 번째 열이 과하게 눌리며 레이아웃이 깨지는 문제를 막기 위해, 법률 표 래퍼/열 최소폭/고정 레이아웃 규칙을 보강했다.
 - EDSN Frame 한국어 개인정보처리방침 2항의 계정 연결 처리 항목에서 `이메일 주소(제공 시)` 표기를 `이메일 주소`로 수정했다.
 - EDSN Frame 영문 개인정보처리방침 2항의 계정 연결 처리 항목에서도 `email address (if provided)`를 `email address`로 수정했다.
+- EDSN Frame 한글/영문 개인정보처리방침에 초대 보상 및 무료/보상 지급의 반복 부정수령 방지를 위한 해시 기록 처리 항목, 보유 기간, 파기 문구를 추가했다.
+- EDSN Frame 한글/영문 이용약관에 반복 부정수령 금지행위와 계정 삭제 이후 최소 범위 해시 기록 보관 가능 문구를 추가했다.
 # 2026-04-14
 
 - Improved local Safari preview reliability by introducing a no-cache static preview server and updating the preview launchers to use it, reducing stale asset/cache mismatches during homepage QA.
