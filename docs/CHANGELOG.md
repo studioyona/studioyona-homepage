@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+- EDSN Frame 한글/영문 개인정보처리방침 9-1 자동 수집 정보 항목에 Apple DeviceCheck 토큰 및 검증 결과를 추가해, 무료/보상 지급 반복 수령 방지 목적과 광고 추적 비해당 사실을 공개 페이지에 명시했다.
+
+- `PUBLIC_LEGAL_PAGES_FINAL_UPDATE_HANDOFF_2026-04-30.md` 기준으로 EDSN Frame 한글/영문 공개 개인정보처리방침·이용약관의 DeviceCheck, under-14, 자동갱신 구독, 무료 포토부스 필름 재지급 제한 관련 최종 공개 문구 반영 상태를 재검토하고 기록을 정리했다.
+
 - EDSN Frame이 아직 App Store 출시 전 상태임을 반영해, 회사 소개/앱 소개/앱 상세 페이지의 한국어·영어 공개 문구를 `출시 예정` 기준으로 조정했다.
 
 - `Studio YONA HomePage` 워크스페이스 초기 세팅을 추가했다.

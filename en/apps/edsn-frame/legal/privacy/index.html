@@ -103,7 +103,7 @@
                     <tr>
                       <td>Required</td>
                       <td>Prevent repeated fraudulent claiming of referral rewards and free/reward grants</td>
-                      <td>Apple/Google account identifier hash processed with server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
+                      <td>Apple DeviceCheck token and verification result, Apple/Google account identifier hash processed with a server-side HMAC secret, installation/device abuse token hash processed with HMAC, reward/grant type, grant key, first/recent detection time, expiration time</td>
                     </tr>
                     <tr>
                       <td>Optional</td>
@@ -122,6 +122,7 @@
               <ul>
                 <li>Based on the current implementation, original photos and videos taken through the Service are generally stored on the user's device or in the user's photo library and are not uploaded to the operator's server during normal use of the Service.</li>
                 <li>Linking an Apple or Google account is optional, and users may start the core shooting flow in guest mode.</li>
+                <li>The Apple DeviceCheck token is sent to Apple to verify and prevent repeated fraudulent claiming of free/reward grants. The Company does not store the raw DeviceCheck token on its server. The Company stores only the minimum records needed for abuse prevention, such as grant status, grant key, and processing time.</li>
                 <li>The Company does not collect unique identifiers such as resident registration numbers, passport numbers, or driver's license numbers.</li>
                 <li>The Company does not, by default, collect sensitive information such as health information or biometric information. If the actual operational scope changes, this Policy will be updated.</li>
               </ul>
@@ -283,10 +284,10 @@
                     </tr>
                     <tr>
                       <td>Apple Inc.</td>
-                      <td>App Store transaction information and Sign in with Apple related information (when selected)</td>
+                      <td>App Store transaction information, Sign in with Apple related information (when selected), DeviceCheck token and verification result</td>
                       <td>United States</td>
-                      <td>Transferred when payments, restorations, or Apple sign-in occur</td>
-                      <td>Payment processing and account authentication</td>
+                      <td>Transferred when payments, restorations, Apple sign-in, or free/reward grant abuse-prevention verification occur</td>
+                      <td>Payment processing, account authentication, and device-level abuse prevention</td>
                       <td>Subject to Apple policies</td>
                     </tr>
                   </tbody>
@@ -311,7 +312,7 @@
                 <li>In-app features: Settings &gt; Account &gt; Delete Account, legal links in Settings, and permission/tracking settings in iOS system settings</li>
                 <li>Inquiry email: <a href="mailto:studioyona.official@gmail.com">studioyona.official@gmail.com</a></li>
               </ul>
-              <p>The Company does not provide the Service to children under the age of 14. If the Company becomes aware that it has collected personal information from a child under 14, it will review and take necessary measures such as deletion or restriction of use without delay, and a legal representative may notify the Company of the relevant facts or request deletion through the contact channel below.</p>
+              <p>The Company does not direct the Service primarily to children under the age of 14. If the Company becomes aware that it has collected personal information from a child under 14 without consent from a legal representative, it will review and take necessary measures without delay, such as deletion or restriction of use. A legal representative may notify the Company of the relevant facts or request deletion through the contact channel below.</p>
             </div>
 
             <div class="section">
@@ -320,6 +321,7 @@
               <h3>9-1. Processed Items</h3>
               <ul>
                 <li>Advertising identifiers (such as IDFA, when permitted by iOS)</li>
+                <li>Apple DeviceCheck token and verification result, used to prevent repeated fraudulent claiming of free/reward grants and not for advertising tracking.</li>
                 <li>Ad exposure/click/reward processing status</li>
                 <li>App version, device OS, permission status, and minimal service usage log information</li>
               </ul>
