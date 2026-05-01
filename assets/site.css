@@ -1180,6 +1180,39 @@ body.home-page::before {
   place-items: center;
 }
 
+.app-visual-stampho {
+  display: grid;
+  place-items: center;
+}
+
+.visual-stamp-card {
+  width: min(74%, 260px);
+  aspect-ratio: 4 / 5;
+  display: grid;
+  align-content: end;
+  gap: 0.7rem;
+  padding: 1.4rem;
+  border-radius: 24px;
+  border: 1px solid rgba(31, 26, 22, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.78)),
+    linear-gradient(145deg, rgba(78, 112, 130, 0.24), rgba(192, 116, 84, 0.2));
+  box-shadow: 0 24px 50px rgba(24, 18, 15, 0.12);
+}
+
+.visual-stamp-card span {
+  width: max-content;
+  max-width: 100%;
+  padding: 0.38rem 0.7rem;
+  border: 1px solid rgba(31, 26, 22, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--home-dark);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .visual-wave {
   position: relative;
   width: min(76%, 290px);
