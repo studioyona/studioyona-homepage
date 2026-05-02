@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 출시 전 노출 방지를 위해 홈과 앱 목록에서 `Stampho` 표시 및 링크를 제거하고, 기존 Stampho 상세/법률 페이지에는 `noindex, nofollow` 메타 태그를 추가했다.
+
 - Google AdMob app-ads.txt 공개를 위해 사이트 루트에 `app-ads.txt`를 추가했다.
 
 - Stampho 한글 이용약관 제12조의 목록 태그 오타를 수정했다.
