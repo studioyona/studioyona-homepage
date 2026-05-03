@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+- EDSN Frame iOS App Store 출시를 반영해 회사 소개, 앱 목록, 한글/영문 앱 상세 페이지의 공개 문구를 `출시 중/출시 완료` 기준으로 조정했다.
+
+- 운영 사이트에서는 `Stampho`를 계속 숨기되, 로컬 미리보기 환경에서만 홈/앱 목록에 Stampho 패널과 카드를 동적으로 표시하도록 했다.
+
 - 출시 전 노출 방지를 위해 홈과 앱 목록에서 `Stampho` 표시 및 링크를 제거하고, 기존 Stampho 상세/법률 페이지에는 `noindex, nofollow` 메타 태그를 추가했다.
 
 - Google AdMob app-ads.txt 공개를 위해 사이트 루트에 `app-ads.txt`를 추가했다.
