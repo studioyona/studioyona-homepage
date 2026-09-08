@@ -620,11 +620,44 @@ EN:
 - Flow: Open Quick Note, start a task in one line, organize everything together
 - Key features: notes and tasks, recent items and favorites, scraps and search, iCloud and Apple Reminders
 
+### Mandarana
+
+KR path: `ko/apps/mandarana/index.html`
+
+- Title: 만다라나 (Mandarana) | Studio YONA
+- Description: 집중한 시간이 만다라 작품으로 자라는 Studio YONA의 iPhone 집중 타이머 앱입니다.
+- Eyebrow: Studio YONA의 집중 앱
+- Lead: 집중한 시간이 한 겹씩 자라 작품으로 남는 집중 타이머입니다.
+- CTA: 기능 살펴보기, 개인정보처리방침, 이용약관
+- Pills: 출시 준비 중, iPhone 전용, iOS 17 이상, 한국어
+- Summary: 한 줄 소개 / 집중이 작품으로 자라는 시간
+- Status: 출시 현황 / App Store 출시 준비 중 · iPhone 전용
+- Support: 지원 이메일 / studioyona.official@gmail.com
+- Statement: 집중하는 동안 만다라가 자랍니다 / 시간과 색을 고르고 집중을 시작하세요. 세션이 흐르는 만큼 오늘만의 작품이 한 겹씩 완성됩니다.
+- Facts: 10분–4시간 / 타이머 또는 종료 시각으로 설정합니다; 한 점의 작품 / 집중한 시간이 오늘의 무늬로 남습니다; 기기 안에 / 계정 없이 집중 기록과 작품을 보관합니다
+- Features: 집중의 시작부터 기록까지 / 집중을 방해하지 않는 범위에서 필요한 설정과 기록만 기기 안에 남깁니다.
+  - 시간에 맞춰 자라는 작품 / 집중 시간이 길수록 만다라의 겹과 복잡도가 천천히 늘어납니다.
+  - 선택적인 집중 차단 / 원하시면 Screen Time 권한으로 허용 앱 외의 앱을 가릴 수 있습니다. 허용한 앱으로 이동해도 집중 이탈 판정은 적용됩니다.
+  - 성공과 실패를 함께 기록 / 완성작뿐 아니라 빛바랜 미완성작도 갤러리에 남아 집중의 흐름을 돌아볼 수 있습니다.
+  - 조용한 앰비언트 / 원하는 앰비언트를 고르거나 소리 없이 집중할 수 있습니다.
+- Flow: 한 겹씩 완성하세요 / 오늘 머무를 일을 정하고 집중을 시작하세요. 흐르는 시간이 그림으로 남습니다.
+  - 오늘의 집중 정하기 / 오늘의 집중을 정합니다 / 타이머나 종료 시각을 정하고 색을 고릅니다. 작업 메모와 앰비언트는 원할 때 더할 수 있습니다.
+  - 시간을 작품으로 남기기 / 시간을 작품으로 남깁니다 / 집중하는 동안 그림이 자랍니다. 세션이 끝나면 완성작과 미완성작을 갤러리에서 다시 보고, 이미지로 저장하거나 공유할 수 있습니다.
+- Contact: 도움이 필요하신가요 / 앱 사용, Screen Time 차단, 알림, 개인정보 권리행사와 오류 제보를 이메일로 받고 있습니다.
+- Contact CTA: 문의 메일 보내기, 지원 페이지 보기, 개인정보처리방침, 이용약관
+- Home KR: Focus & Art / 만다라나 / 집중한 시간이 한 겹씩 자라 작품으로 남습니다. 시간과 색을 고르고, 오늘의 집중을 기기 안의 갤러리에 모아보세요. / 시간에 맞춰 자라는 만다라 / iPhone 출시 준비 중 · 한국어
+- Home EN: Focus & Art / Mandarana / Watch your focused time grow into a mandala. Choose a duration and color, then keep each session in an on-device gallery. / A mandala that grows with your session / Preparing for iPhone release · Korean app
+- Apps KR: iPhone 출시 준비 중 · 한국어 / 만다라나 / 집중한 시간이 만다라 작품으로 자랍니다. 시간과 색을 고르고 집중 기록을 기기 안의 갤러리에 모아보세요. / 자세히 보기
+- Apps EN: Preparing for iPhone release · Korean app / Mandarana / Turn focused time into a mandala. Choose a duration and color, then keep your sessions in an on-device gallery. / Learn more (Korean)
+- Language: 영어 홈·목록에서도 한국어 소개·법률 문서로 연결하며 링크에 Korean을 표시합니다. 한국어 원문만 제공하고 영어 법률 번역은 만들지 않습니다.
+
 ## Legal And Notice Pages
 
 이 문서에는 법률 전문 본문을 포함하지 않았다.
 
 현재 법률/공지 페이지:
+- `ko/apps/mandarana/legal/privacy/index.html`
+- `ko/apps/mandarana/legal/terms/index.html`
 - `ko/apps/edsn-frame/legal/privacy/index.html`
 - `ko/apps/edsn-frame/legal/terms/index.html`
 - `en/apps/edsn-frame/legal/privacy/index.html`

@@ -8,9 +8,10 @@
   <link rel="canonical" href="https://www.studioyona.co.kr/ko/apps/mandarana/" />
   <link rel="icon" href="/assets/studio-yona-mark.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/assets/site.css?v=20260801b" />
-  <script defer src="/assets/site.js?v=20260730a"></script>
+  <script defer src="/assets/site.js?v=20260830a"></script>
 </head>
 <body class="app-page app-detail-page compact-page">
+  <a class="skip-link" href="#content">본문으로 건너뛰기</a>
   <header class="home-header compact-header">
     <a class="home-wordmark" href="/" aria-label="Studio YONA 홈"><img src="/assets/studio-yona-mark.svg" alt="" aria-hidden="true" /><span>Studio YONA</span></a>
     <div class="home-controls">
@@ -31,7 +32,7 @@
       </nav>
     </aside>
   </div>
-  <div class="shell"><main>
+  <div class="shell"><main id="content">
     <section class="hero hero-band">
       <div class="hero-band-inner">
         <div>
@@ -39,11 +40,12 @@
           <h1 class="app-lockup"><span class="app-lockup-main no-break">만다라나</span><span class="app-lockup-sub">Mandarana</span></h1>
           <p class="lead">집중한 시간이 한 겹씩 자라 작품으로 남는 집중 타이머입니다.</p>
           <div class="hero-actions">
-            <a class="button primary" href="/ko/apps/mandarana/support/">지원</a>
+            <a class="button primary" href="#features">기능 살펴보기</a>
             <a class="button secondary" href="/ko/apps/mandarana/legal/privacy/">개인정보처리방침</a>
             <a class="button secondary" href="/ko/apps/mandarana/legal/terms/">이용약관</a>
           </div>
           <div class="meta" aria-label="앱 정보">
+            <span class="pill">출시 준비 중</span>
             <span class="pill">iPhone 전용</span>
             <span class="pill">iOS 17 이상</span>
             <span class="pill">한국어</span>
@@ -64,13 +66,13 @@
         <p class="band-lede">시간과 색을 고르고 집중을 시작하세요. 세션이 흐르는 만큼 오늘만의 작품이 한 겹씩 완성됩니다.</p>
         <ul class="facts" data-rise-group>
           <li><b>10분–4시간</b><span>타이머 또는 종료 시각으로 설정합니다</span></li>
-          <li><b>10가지</b><span>만다라·레이스·장미창·연꽃 등 다양한 스타일이 자랍니다</span></li>
-          <li><b>0</b><span>계정, 광고, 분석 SDK가 없습니다</span></li>
+          <li><b>한 점의 작품</b><span>집중한 시간이 오늘의 무늬로 남습니다</span></li>
+          <li><b>기기 안에</b><span>계정 없이 집중 기록과 작품을 보관합니다</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="band">
+    <section class="band" id="features">
       <div class="band-inner" data-rise>
         <span class="band-label">주요 기능</span>
         <div class="split">
@@ -79,9 +81,9 @@
             <p class="band-lede">집중을 방해하지 않는 범위에서 필요한 설정과 기록만 기기 안에 남깁니다.</p>
             <ul class="cases" data-rise-group>
               <li><strong>시간에 맞춰 자라는 작품</strong><p>집중 시간이 길수록 만다라의 겹과 복잡도가 천천히 늘어납니다.</p></li>
-              <li><strong>선택적인 집중 차단</strong><p>Screen Time 권한을 허용하면 집중 중 계속 사용할 앱을 직접 고를 수 있습니다.</p></li>
+              <li><strong>선택적인 집중 차단</strong><p>원하시면 Screen Time 권한으로 허용 앱 외의 앱을 가릴 수 있습니다. 허용한 앱으로 이동해도 집중 이탈 판정은 적용됩니다.</p></li>
               <li><strong>성공과 실패를 함께 기록</strong><p>완성작뿐 아니라 빛바랜 미완성작도 갤러리에 남아 집중의 흐름을 돌아볼 수 있습니다.</p></li>
-              <li><strong>조용한 앰비언트</strong><p>소리 없음, 고요, 성소, 심야 등의 60초 음악 루프를 선택할 수 있습니다.</p></li>
+              <li><strong>조용한 앰비언트</strong><p>원하는 앰비언트를 고르거나 소리 없이 집중할 수 있습니다.</p></li>
             </ul>
           </div>
           <div class="app-visual app-icon-visual"><img class="app-icon-art" src="/assets/app-icons/mandarana.png" alt="만다라나 앱 아이콘" loading="lazy" width="1024" height="1024" /></div>
@@ -90,15 +92,32 @@
     </section>
 
     <section class="band band-dark">
-      <div class="band-inner" data-rise>
-        <span class="band-label">사용 흐름</span>
-        <h2 class="band-title">한 겹씩 완성하세요</h2>
-        <ul class="cases cases-plain" data-rise-group>
-          <li><p>타이머 또는 종료 시각을 정하고 원하는 색을 고릅니다.</p></li>
-          <li><p>필요하면 작업 메모와 앰비언트, 허용 앱을 설정합니다.</p></li>
-          <li><p>집중하는 동안 화면에서 작품이 자라는 과정을 지켜봅니다.</p></li>
-          <li><p>완성된 작품을 갤러리에 남기고 이미지로 공유합니다.</p></li>
-        </ul>
+      <div class="band-inner">
+        <div class="scene">
+          <div class="scene-pin">
+            <span class="band-label">사용 흐름</span>
+            <h2 class="band-title">한 겹씩 완성하세요</h2>
+            <p class="band-lede">오늘 머무를 일을 정하고 집중을 시작하세요. 흐르는 시간이 그림으로 남습니다.</p>
+            <ol class="scene-rail">
+              <li><span>오늘의 집중 정하기</span></li>
+              <li><span>시간을 작품으로 남기기</span></li>
+            </ol>
+          </div>
+          <div class="scene-steps">
+            <article class="scene-step">
+              <span class="scene-index">01</span>
+              <img src="/assets/screenshots/mandarana/ko-01-home.png" alt="집중할 일, 시간, 소리와 그림 색을 고르는 만다라나 홈 화면" loading="lazy" width="1284" height="2778" />
+              <h3>오늘의 집중을 정합니다</h3>
+              <p>타이머나 종료 시각을 정하고 색을 고릅니다. 작업 메모와 앰비언트는 원할 때 더할 수 있습니다.</p>
+            </article>
+            <article class="scene-step">
+              <span class="scene-index">02</span>
+              <img src="/assets/screenshots/mandarana/ko-02-focus.png" alt="남은 시간과 자라나는 작품을 보여주는 만다라나 집중 화면" loading="lazy" width="1284" height="2778" />
+              <h3>시간을 작품으로 남깁니다</h3>
+              <p>집중하는 동안 그림이 자랍니다. 세션이 끝나면 완성작과 미완성작을 갤러리에서 다시 보고, 이미지로 저장하거나 공유할 수 있습니다.</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
