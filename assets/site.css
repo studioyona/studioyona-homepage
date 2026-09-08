@@ -1419,6 +1419,7 @@ body.policy-notice-open .home-footer-band {
 
 .app-icon-art {
   width: 100%;
+  height: auto;
   aspect-ratio: 1;
   border-radius: 22%;
   box-shadow: 0 16px 34px rgba(57, 38, 26, 0.12);
